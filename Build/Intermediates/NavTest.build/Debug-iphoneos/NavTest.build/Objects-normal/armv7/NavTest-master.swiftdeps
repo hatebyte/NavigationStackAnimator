@@ -1,0 +1,11 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "ebddd256d9381adbd52c8224b65337b8"
+build_time: [507222800, 384634000]
+inputs:
+  "/Users/scottjones/ios/examples/NavTest/NavTest/AppDelegate.swift": [506299362, 0]
+  "/Users/scottjones/ios/examples/NavTest/NavTest/Animators.swift": [506275948, 0]
+  "/Users/scottjones/ios/examples/NavTest/NavTest/InteractiveGestureNavigation.swift": [507219170, 0]
+  "/Users/scottjones/ios/examples/NavTest/NavTest/VerticalPanGestureNavigator.swift": [506535667, 0]
+  "/Users/scottjones/ios/examples/NavTest/NavTest/ViewController.swift": [506974838, 0]
+  "/Users/scottjones/ios/examples/NavTest/NavTest/NavigationViewController.swift": [507219072, 0]
+  "/Users/scottjones/ios/examples/NavTest/NavTest/HorizontalPanGestureNavigator.swift": [506535700, 0]

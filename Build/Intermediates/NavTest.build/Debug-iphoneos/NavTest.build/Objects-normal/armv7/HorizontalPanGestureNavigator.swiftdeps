@@ -1,0 +1,334 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HorizontalPanGestureNavigator"
+provides-nominal:
+- "C7NavTest29HorizontalPanGestureNavigator"
+provides-member:
+- ["C7NavTest29HorizontalPanGestureNavigator", ""]
+provides-dynamic-lookup:
+- "isPopping"
+- "gestureRecognizer"
+- "updateInteractiveTransition"
+- "endInteractiveTransition"
+- "beginInteractiveTransition"
+depends-top-level:
+- !private "/"
+- "UIGestureRecognizer"
+- !private ">"
+- !private "fabs"
+- !private "UIPercentDrivenInteractiveTransition"
+- "UIPanGestureRecognizer"
+- "HorizontalPanGestureNavigator"
+- !private "<"
+- !private "CGRectGetWidth"
+- "GestureCollector"
+- "BooleanLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "CGRectGetWidth"]
+- !private ["PSs9AnyObject", "UIPanGestureRecognizer"]
+- !private ["PSs9AnyObject", "UIPercentDrivenInteractiveTransition"]
+- ["PSs9AnyObject", "beginInteractiveTransition"]
+- !private ["PSs9AnyObject", "bounds"]
+- !private ["PSs9AnyObject", "cancelInteractiveTransition"]
+- ["PSs9AnyObject", "endInteractiveTransition"]
+- !private ["PSs9AnyObject", "fabs"]
+- !private ["PSs9AnyObject", "finishInteractiveTransition"]
+- ["PSs9AnyObject", "gestureRecognizer"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "interactionController"]
+- ["PSs9AnyObject", "isPopping"]
+- !private ["PSs9AnyObject", "popViewController"]
+- !private ["PSs9AnyObject", "pushViewController"]
+- !private ["PSs9AnyObject", "translationInView"]
+- ["PSs9AnyObject", "updateInteractiveTransition"]
+- !private ["PSs9AnyObject", "velocityInView"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["PSs11CVarArgType", "CGRectGetWidth"]
+- !private ["PSs11CVarArgType", "UIPanGestureRecognizer"]
+- !private ["PSs11CVarArgType", "UIPercentDrivenInteractiveTransition"]
+- ["PSs11CVarArgType", "beginInteractiveTransition"]
+- !private ["PSs11CVarArgType", "bounds"]
+- !private ["PSs11CVarArgType", "cancelInteractiveTransition"]
+- ["PSs11CVarArgType", "endInteractiveTransition"]
+- !private ["PSs11CVarArgType", "fabs"]
+- !private ["PSs11CVarArgType", "finishInteractiveTransition"]
+- ["PSs11CVarArgType", "gestureRecognizer"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "interactionController"]
+- ["PSs11CVarArgType", "isPopping"]
+- !private ["PSs11CVarArgType", "popViewController"]
+- !private ["PSs11CVarArgType", "pushViewController"]
+- !private ["PSs11CVarArgType", "translationInView"]
+- ["PSs11CVarArgType", "updateInteractiveTransition"]
+- !private ["PSs11CVarArgType", "velocityInView"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", ""]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs23CustomStringConvertible", "CGRectGetWidth"]
+- !private ["PSs23CustomStringConvertible", "UIPanGestureRecognizer"]
+- !private ["PSs23CustomStringConvertible", "UIPercentDrivenInteractiveTransition"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "beginInteractiveTransition"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
+- !private ["PSs23CustomStringConvertible", "cancelInteractiveTransition"]
+- ["PSs23CustomStringConvertible", "endInteractiveTransition"]
+- !private ["PSs23CustomStringConvertible", "fabs"]
+- !private ["PSs23CustomStringConvertible", "finishInteractiveTransition"]
+- ["PSs23CustomStringConvertible", "gestureRecognizer"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "interactionController"]
+- ["PSs23CustomStringConvertible", "isPopping"]
+- !private ["PSs23CustomStringConvertible", "popViewController"]
+- !private ["PSs23CustomStringConvertible", "pushViewController"]
+- !private ["PSs23CustomStringConvertible", "translationInView"]
+- ["PSs23CustomStringConvertible", "updateInteractiveTransition"]
+- !private ["PSs23CustomStringConvertible", "velocityInView"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CGRectGetWidth"]
+- !private ["PSs9Equatable", "UIPanGestureRecognizer"]
+- !private ["PSs9Equatable", "UIPercentDrivenInteractiveTransition"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "beginInteractiveTransition"]
+- !private ["PSs9Equatable", "bounds"]
+- !private ["PSs9Equatable", "cancelInteractiveTransition"]
+- ["PSs9Equatable", "endInteractiveTransition"]
+- !private ["PSs9Equatable", "fabs"]
+- !private ["PSs9Equatable", "finishInteractiveTransition"]
+- ["PSs9Equatable", "gestureRecognizer"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "interactionController"]
+- ["PSs9Equatable", "isPopping"]
+- !private ["PSs9Equatable", "popViewController"]
+- !private ["PSs9Equatable", "pushViewController"]
+- !private ["PSs9Equatable", "translationInView"]
+- ["PSs9Equatable", "updateInteractiveTransition"]
+- !private ["PSs9Equatable", "velocityInView"]
+- !private ["PSs9Equatable", "view"]
+- !private ["PSs9Equatable", "x"]
+- ["PSs9Equatable", ""]
+- !private ["C7NavTest16GestureCollector", "CGRectGetWidth"]
+- ["C7NavTest16GestureCollector", "UIGestureRecognizer"]
+- ["C7NavTest16GestureCollector", "UIPanGestureRecognizer"]
+- !private ["C7NavTest16GestureCollector", "UIPercentDrivenInteractiveTransition"]
+- ["C7NavTest16GestureCollector", "beginInteractiveTransition"]
+- ["C7NavTest16GestureCollector", "deinit"]
+- ["C7NavTest16GestureCollector", "endInteractiveTransition"]
+- !private ["C7NavTest16GestureCollector", "fabs"]
+- ["C7NavTest16GestureCollector", "gestureRecognizer"]
+- ["C7NavTest16GestureCollector", "init"]
+- !private ["C7NavTest16GestureCollector", "interactionController"]
+- ["C7NavTest16GestureCollector", "isPopping"]
+- !private ["C7NavTest16GestureCollector", "popViewController"]
+- !private ["C7NavTest16GestureCollector", "pushViewController"]
+- ["C7NavTest16GestureCollector", "updateInteractiveTransition"]
+- ["C7NavTest16GestureCollector", ""]
+- !private ["PSs8Hashable", "CGRectGetWidth"]
+- !private ["PSs8Hashable", "UIPanGestureRecognizer"]
+- !private ["PSs8Hashable", "UIPercentDrivenInteractiveTransition"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "beginInteractiveTransition"]
+- !private ["PSs8Hashable", "bounds"]
+- !private ["PSs8Hashable", "cancelInteractiveTransition"]
+- ["PSs8Hashable", "endInteractiveTransition"]
+- !private ["PSs8Hashable", "fabs"]
+- !private ["PSs8Hashable", "finishInteractiveTransition"]
+- ["PSs8Hashable", "gestureRecognizer"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "interactionController"]
+- ["PSs8Hashable", "isPopping"]
+- !private ["PSs8Hashable", "popViewController"]
+- !private ["PSs8Hashable", "pushViewController"]
+- !private ["PSs8Hashable", "translationInView"]
+- ["PSs8Hashable", "updateInteractiveTransition"]
+- !private ["PSs8Hashable", "velocityInView"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", ""]
+- !private ["C7NavTest29HorizontalPanGestureNavigator", "CGRectGetWidth"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "UIGestureRecognizer"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "UIPanGestureRecognizer"]
+- !private ["C7NavTest29HorizontalPanGestureNavigator", "UIPercentDrivenInteractiveTransition"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "beginInteractiveTransition"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "deinit"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "endInteractiveTransition"]
+- !private ["C7NavTest29HorizontalPanGestureNavigator", "fabs"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "gestureRecognizer"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "init"]
+- !private ["C7NavTest29HorizontalPanGestureNavigator", "interactionController"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "isPopping"]
+- !private ["C7NavTest29HorizontalPanGestureNavigator", "popViewController"]
+- !private ["C7NavTest29HorizontalPanGestureNavigator", "pushViewController"]
+- ["C7NavTest29HorizontalPanGestureNavigator", "updateInteractiveTransition"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "CGRectGetWidth"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "UIPanGestureRecognizer"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "UIPercentDrivenInteractiveTransition"]
+- ["P7NavTest29InteractiveNavigationGesturer", "beginInteractiveTransition"]
+- ["P7NavTest29InteractiveNavigationGesturer", "endInteractiveTransition"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "fabs"]
+- ["P7NavTest29InteractiveNavigationGesturer", "gestureRecognizer"]
+- ["P7NavTest29InteractiveNavigationGesturer", "init"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "interactionController"]
+- ["P7NavTest29InteractiveNavigationGesturer", "isPopping"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "popViewController"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "pushViewController"]
+- ["P7NavTest29InteractiveNavigationGesturer", "updateInteractiveTransition"]
+- ["P7NavTest29InteractiveNavigationGesturer", ""]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["CSo8NSObject", "CGRectGetWidth"]
+- ["CSo8NSObject", "UIGestureRecognizer"]
+- ["CSo8NSObject", "UIPanGestureRecognizer"]
+- !private ["CSo8NSObject", "UIPercentDrivenInteractiveTransition"]
+- ["CSo8NSObject", "beginInteractiveTransition"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "cancelInteractiveTransition"]
+- ["CSo8NSObject", "endInteractiveTransition"]
+- !private ["CSo8NSObject", "fabs"]
+- !private ["CSo8NSObject", "finishInteractiveTransition"]
+- ["CSo8NSObject", "gestureRecognizer"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "interactionController"]
+- ["CSo8NSObject", "isPopping"]
+- !private ["CSo8NSObject", "popViewController"]
+- !private ["CSo8NSObject", "pushViewController"]
+- !private ["CSo8NSObject", "translationInView"]
+- ["CSo8NSObject", "updateInteractiveTransition"]
+- !private ["CSo8NSObject", "velocityInView"]
+- !private ["CSo8NSObject", "view"]
+- !private ["PSo16NSObjectProtocol", "CGRectGetWidth"]
+- !private ["PSo16NSObjectProtocol", "UIPanGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "UIPercentDrivenInteractiveTransition"]
+- ["PSo16NSObjectProtocol", "beginInteractiveTransition"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "cancelInteractiveTransition"]
+- ["PSo16NSObjectProtocol", "endInteractiveTransition"]
+- !private ["PSo16NSObjectProtocol", "fabs"]
+- !private ["PSo16NSObjectProtocol", "finishInteractiveTransition"]
+- ["PSo16NSObjectProtocol", "gestureRecognizer"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "interactionController"]
+- ["PSo16NSObjectProtocol", "isPopping"]
+- !private ["PSo16NSObjectProtocol", "popViewController"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
+- !private ["PSo16NSObjectProtocol", "translationInView"]
+- ["PSo16NSObjectProtocol", "updateInteractiveTransition"]
+- !private ["PSo16NSObjectProtocol", "velocityInView"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo19UIGestureRecognizer", "translationInView"]
+- !private ["CSo19UIGestureRecognizer", "velocityInView"]
+- !private ["CSo19UIGestureRecognizer", "view"]
+- !private ["PSo27UIGestureRecognizerDelegate", "CGRectGetWidth"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIPanGestureRecognizer"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIPercentDrivenInteractiveTransition"]
+- ["PSo27UIGestureRecognizerDelegate", "beginInteractiveTransition"]
+- ["PSo27UIGestureRecognizerDelegate", "endInteractiveTransition"]
+- !private ["PSo27UIGestureRecognizerDelegate", "fabs"]
+- ["PSo27UIGestureRecognizerDelegate", "gestureRecognizer"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "interactionController"]
+- ["PSo27UIGestureRecognizerDelegate", "isPopping"]
+- !private ["PSo27UIGestureRecognizerDelegate", "popViewController"]
+- !private ["PSo27UIGestureRecognizerDelegate", "pushViewController"]
+- ["PSo27UIGestureRecognizerDelegate", "updateInteractiveTransition"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["PSo30UINavigationControllerDelegate", "CGRectGetWidth"]
+- !private ["PSo30UINavigationControllerDelegate", "UIPanGestureRecognizer"]
+- !private ["PSo30UINavigationControllerDelegate", "UIPercentDrivenInteractiveTransition"]
+- ["PSo30UINavigationControllerDelegate", "beginInteractiveTransition"]
+- ["PSo30UINavigationControllerDelegate", "endInteractiveTransition"]
+- !private ["PSo30UINavigationControllerDelegate", "fabs"]
+- ["PSo30UINavigationControllerDelegate", "gestureRecognizer"]
+- ["PSo30UINavigationControllerDelegate", "init"]
+- !private ["PSo30UINavigationControllerDelegate", "interactionController"]
+- ["PSo30UINavigationControllerDelegate", "isPopping"]
+- !private ["PSo30UINavigationControllerDelegate", "popViewController"]
+- !private ["PSo30UINavigationControllerDelegate", "pushViewController"]
+- ["PSo30UINavigationControllerDelegate", "updateInteractiveTransition"]
+- ["PSo30UINavigationControllerDelegate", ""]
+- !private ["CSo22UIPanGestureRecognizer", "init"]
+- !private ["CSo22UIPanGestureRecognizer", "translationInView"]
+- !private ["CSo22UIPanGestureRecognizer", "velocityInView"]
+- !private ["CSo22UIPanGestureRecognizer", "view"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "cancelInteractiveTransition"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "finishInteractiveTransition"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "init"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "updateInteractiveTransition"]
+- !private ["CSo11UIResponder", "bounds"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["CSo6UIView", "bounds"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "cancelInteractiveTransition"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "finishInteractiveTransition"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "init"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "updateInteractiveTransition"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "bounds"]
+- !private ["PSs12_Reflectable", "x"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- "PSs11CVarArgType"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "C7NavTest16GestureCollector"
+- "PSs8Hashable"
+- "C7NavTest29HorizontalPanGestureNavigator"
+- "P7NavTest29InteractiveNavigationGesturer"
+- !private "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo19UIGestureRecognizer"
+- "PSo27UIGestureRecognizerDelegate"
+- "PSo30UINavigationControllerDelegate"
+- !private "CSo22UIPanGestureRecognizer"
+- !private "CSo36UIPercentDrivenInteractiveTransition"
+- !private "CSo11UIResponder"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "PSo40UIViewControllerInteractiveTransitioning"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+interface-hash: "22ebdcea450932db395b2986cb70b575"

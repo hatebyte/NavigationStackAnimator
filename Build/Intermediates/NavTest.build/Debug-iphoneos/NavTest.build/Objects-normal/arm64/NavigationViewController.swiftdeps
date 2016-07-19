@@ -1,0 +1,284 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GesturerAnimator"
+- "VerticalSwipeNavigationStack"
+- "HorizontalSwipeNavigationStack"
+- "NavigationViewController"
+provides-nominal:
+- "P7NavTest16GesturerAnimator"
+- "P7NavTest28VerticalSwipeNavigationStack"
+- "P7NavTest30HorizontalSwipeNavigationStack"
+- "C7NavTest24NavigationViewController"
+provides-member:
+- ["P7NavTest16GesturerAnimator", ""]
+- ["P7NavTest28VerticalSwipeNavigationStack", ""]
+- ["P7NavTest30HorizontalSwipeNavigationStack", ""]
+- ["C7NavTest24NavigationViewController", ""]
+- ["P7NavTest28VerticalSwipeNavigationStack", "createGestureCollector"]
+- ["P7NavTest30HorizontalSwipeNavigationStack", "createGestureCollector"]
+provides-dynamic-lookup:
+- "toggleGestures"
+- "viewDidLoad"
+- "gestureCollector"
+- "isVertical"
+depends-top-level:
+- "Bool"
+- "HorizontalSwipeNavigationStack"
+- !private "HorizontalPanGestureNavigator"
+- "GesturerAnimator"
+- "UINavigationController"
+- "VerticalSwipeNavigationStack"
+- "GestureCollector"
+- !private "VerticalPanGestureNavigator"
+- "NavigationViewController"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "HorizontalPanGestureNavigator"]
+- !private ["PSs9AnyObject", "VerticalPanGestureNavigator"]
+- ["PSs9AnyObject", "gestureCollector"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isKindOfClass"]
+- ["PSs9AnyObject", "isVertical"]
+- ["PSs9AnyObject", "toggleGestures"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "HorizontalPanGestureNavigator"]
+- !private ["PSs11CVarArgType", "VerticalPanGestureNavigator"]
+- ["PSs11CVarArgType", "gestureCollector"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isKindOfClass"]
+- ["PSs11CVarArgType", "isVertical"]
+- ["PSs11CVarArgType", "toggleGestures"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs23CustomStringConvertible", "HorizontalPanGestureNavigator"]
+- !private ["PSs23CustomStringConvertible", "VerticalPanGestureNavigator"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "gestureCollector"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isKindOfClass"]
+- ["PSs23CustomStringConvertible", "isVertical"]
+- ["PSs23CustomStringConvertible", "toggleGestures"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "HorizontalPanGestureNavigator"]
+- !private ["PSs9Equatable", "VerticalPanGestureNavigator"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "gestureCollector"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isKindOfClass"]
+- ["PSs9Equatable", "isVertical"]
+- ["PSs9Equatable", "toggleGestures"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["C7NavTest16GestureCollector", "init"]
+- !private ["C7NavTest16GestureCollector", "isKindOfClass"]
+- ["P7NavTest16GesturerAnimator", "GestureCollector"]
+- !private ["P7NavTest16GesturerAnimator", "HorizontalPanGestureNavigator"]
+- ["P7NavTest16GesturerAnimator", "UINavigationController"]
+- !private ["P7NavTest16GesturerAnimator", "VerticalPanGestureNavigator"]
+- ["P7NavTest16GesturerAnimator", "createGestureCollector"]
+- ["P7NavTest16GesturerAnimator", "gestureCollector"]
+- ["P7NavTest16GesturerAnimator", ""]
+- !private ["PSs8Hashable", "HorizontalPanGestureNavigator"]
+- !private ["PSs8Hashable", "VerticalPanGestureNavigator"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "gestureCollector"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isKindOfClass"]
+- ["PSs8Hashable", "isVertical"]
+- ["PSs8Hashable", "toggleGestures"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["C7NavTest29HorizontalPanGestureNavigator", "init"]
+- ["P7NavTest30HorizontalSwipeNavigationStack", "GestureCollector"]
+- !private ["P7NavTest30HorizontalSwipeNavigationStack", "HorizontalPanGestureNavigator"]
+- ["P7NavTest30HorizontalSwipeNavigationStack", "UINavigationController"]
+- ["P7NavTest30HorizontalSwipeNavigationStack", "createGestureCollector"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "init"]
+- !private ["P7NavTest29InteractiveNavigationGesturer", "isKindOfClass"]
+- !private ["PSo8NSCoding", "HorizontalPanGestureNavigator"]
+- !private ["PSo8NSCoding", "VerticalPanGestureNavigator"]
+- ["PSo8NSCoding", "gestureCollector"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "isVertical"]
+- ["PSo8NSCoding", "toggleGestures"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "HorizontalPanGestureNavigator"]
+- !private ["PSo26NSExtensionRequestHandling", "VerticalPanGestureNavigator"]
+- ["PSo26NSExtensionRequestHandling", "gestureCollector"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "isVertical"]
+- ["PSo26NSExtensionRequestHandling", "toggleGestures"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "GestureCollector"]
+- !private ["CSo8NSObject", "HorizontalPanGestureNavigator"]
+- ["CSo8NSObject", "UINavigationController"]
+- !private ["CSo8NSObject", "VerticalPanGestureNavigator"]
+- ["CSo8NSObject", "gestureCollector"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isKindOfClass"]
+- ["CSo8NSObject", "isVertical"]
+- ["CSo8NSObject", "toggleGestures"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "HorizontalPanGestureNavigator"]
+- !private ["PSo16NSObjectProtocol", "VerticalPanGestureNavigator"]
+- ["PSo16NSObjectProtocol", "gestureCollector"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isKindOfClass"]
+- ["PSo16NSObjectProtocol", "isVertical"]
+- ["PSo16NSObjectProtocol", "toggleGestures"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C7NavTest24NavigationViewController", "Bool"]
+- ["C7NavTest24NavigationViewController", "GestureCollector"]
+- !private ["C7NavTest24NavigationViewController", "HorizontalPanGestureNavigator"]
+- !private ["C7NavTest24NavigationViewController", "VerticalPanGestureNavigator"]
+- ["C7NavTest24NavigationViewController", "deinit"]
+- ["C7NavTest24NavigationViewController", "gestureCollector"]
+- ["C7NavTest24NavigationViewController", "init"]
+- ["C7NavTest24NavigationViewController", "isVertical"]
+- ["C7NavTest24NavigationViewController", "toggleGestures"]
+- ["C7NavTest24NavigationViewController", "viewDidLoad"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["PSo21UIAppearanceContainer", "HorizontalPanGestureNavigator"]
+- !private ["PSo21UIAppearanceContainer", "VerticalPanGestureNavigator"]
+- ["PSo21UIAppearanceContainer", "gestureCollector"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "isVertical"]
+- ["PSo21UIAppearanceContainer", "toggleGestures"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "HorizontalPanGestureNavigator"]
+- !private ["PSo18UIContentContainer", "VerticalPanGestureNavigator"]
+- ["PSo18UIContentContainer", "gestureCollector"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "isVertical"]
+- ["PSo18UIContentContainer", "toggleGestures"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "HorizontalPanGestureNavigator"]
+- !private ["PSo18UIFocusEnvironment", "VerticalPanGestureNavigator"]
+- ["PSo18UIFocusEnvironment", "gestureCollector"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "isVertical"]
+- ["PSo18UIFocusEnvironment", "toggleGestures"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "isKindOfClass"]
+- ["CSo22UINavigationController", "Bool"]
+- ["CSo22UINavigationController", "GestureCollector"]
+- !private ["CSo22UINavigationController", "HorizontalPanGestureNavigator"]
+- ["CSo22UINavigationController", "UINavigationController"]
+- !private ["CSo22UINavigationController", "VerticalPanGestureNavigator"]
+- ["CSo22UINavigationController", "gestureCollector"]
+- ["CSo22UINavigationController", "init"]
+- ["CSo22UINavigationController", "isVertical"]
+- ["CSo22UINavigationController", "toggleGestures"]
+- ["CSo22UINavigationController", "viewDidLoad"]
+- ["CSo22UINavigationController", ""]
+- !private ["PSo30UINavigationControllerDelegate", "init"]
+- !private ["PSo30UINavigationControllerDelegate", "isKindOfClass"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "GestureCollector"]
+- !private ["CSo11UIResponder", "HorizontalPanGestureNavigator"]
+- ["CSo11UIResponder", "UINavigationController"]
+- !private ["CSo11UIResponder", "VerticalPanGestureNavigator"]
+- ["CSo11UIResponder", "gestureCollector"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "isVertical"]
+- ["CSo11UIResponder", "toggleGestures"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "HorizontalPanGestureNavigator"]
+- !private ["PSo16UIStateRestoring", "VerticalPanGestureNavigator"]
+- ["PSo16UIStateRestoring", "gestureCollector"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "isVertical"]
+- ["PSo16UIStateRestoring", "toggleGestures"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "HorizontalPanGestureNavigator"]
+- !private ["PSo18UITraitEnvironment", "VerticalPanGestureNavigator"]
+- ["PSo18UITraitEnvironment", "gestureCollector"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "isVertical"]
+- ["PSo18UITraitEnvironment", "toggleGestures"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "GestureCollector"]
+- !private ["CSo16UIViewController", "HorizontalPanGestureNavigator"]
+- ["CSo16UIViewController", "UINavigationController"]
+- !private ["CSo16UIViewController", "VerticalPanGestureNavigator"]
+- ["CSo16UIViewController", "gestureCollector"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "isVertical"]
+- ["CSo16UIViewController", "toggleGestures"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["C7NavTest27VerticalPanGestureNavigator", "init"]
+- ["P7NavTest28VerticalSwipeNavigationStack", "GestureCollector"]
+- ["P7NavTest28VerticalSwipeNavigationStack", "UINavigationController"]
+- !private ["P7NavTest28VerticalSwipeNavigationStack", "VerticalPanGestureNavigator"]
+- ["P7NavTest28VerticalSwipeNavigationStack", "createGestureCollector"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "C7NavTest16GestureCollector"
+- "P7NavTest16GesturerAnimator"
+- "PSs8Hashable"
+- !private "C7NavTest29HorizontalPanGestureNavigator"
+- "P7NavTest30HorizontalSwipeNavigationStack"
+- !private "P7NavTest29InteractiveNavigationGesturer"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C7NavTest24NavigationViewController"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- !private "PSo27UIGestureRecognizerDelegate"
+- "CSo22UINavigationController"
+- !private "PSo30UINavigationControllerDelegate"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "C7NavTest27VerticalPanGestureNavigator"
+- "P7NavTest28VerticalSwipeNavigationStack"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+interface-hash: "e38a06895cb50e2b465d346109010838"

@@ -1,0 +1,291 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewControllerPush"
+- "ViewControllerPushPop"
+- "ViewControllerPop"
+provides-nominal:
+- "C7NavTest18ViewControllerPush"
+- "C7NavTest21ViewControllerPushPop"
+- "C7NavTest17ViewControllerPop"
+provides-member:
+- ["C7NavTest18ViewControllerPush", ""]
+- ["C7NavTest21ViewControllerPushPop", ""]
+- ["C7NavTest17ViewControllerPop", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "viewDidLoad"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "didReceiveMemoryWarning"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- "ViewControllerPush"
+- "ViewControllerPop"
+- !private "UIColor"
+- "ViewControllerPushPop"
+- "CYNavigationPush"
+- "CYNavigationPop"
+- "UIViewController"
+depends-member:
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "backgroundColor"]
+- !private ["PSs9AnyObject", "blueColor"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "performSeguePop"]
+- ["PSs9AnyObject", "performSeguePush"]
+- ["PSs9AnyObject", "pushSegue"]
+- !private ["PSs9AnyObject", "redColor"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
+- !private ["PSs11CVarArgType", "blueColor"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "performSeguePop"]
+- ["PSs11CVarArgType", "performSeguePush"]
+- ["PSs11CVarArgType", "pushSegue"]
+- !private ["PSs11CVarArgType", "redColor"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["P7NavTest15CYNavigationPop", "UIColor"]
+- ["P7NavTest15CYNavigationPop", "performSeguePop"]
+- ["P7NavTest15CYNavigationPop", "performSeguePush"]
+- ["P7NavTest15CYNavigationPop", "pushSegue"]
+- !private ["P7NavTest15CYNavigationPop", "view"]
+- ["P7NavTest15CYNavigationPop", ""]
+- !private ["P7NavTest16CYNavigationPush", "UIColor"]
+- ["P7NavTest16CYNavigationPush", "performSeguePop"]
+- ["P7NavTest16CYNavigationPush", "performSeguePush"]
+- ["P7NavTest16CYNavigationPush", "pushSegue"]
+- !private ["P7NavTest16CYNavigationPush", "view"]
+- ["P7NavTest16CYNavigationPush", ""]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
+- !private ["PSs23CustomStringConvertible", "blueColor"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "performSeguePop"]
+- ["PSs23CustomStringConvertible", "performSeguePush"]
+- ["PSs23CustomStringConvertible", "pushSegue"]
+- !private ["PSs23CustomStringConvertible", "redColor"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "backgroundColor"]
+- !private ["PSs9Equatable", "blueColor"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "performSeguePop"]
+- ["PSs9Equatable", "performSeguePush"]
+- ["PSs9Equatable", "pushSegue"]
+- !private ["PSs9Equatable", "redColor"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "backgroundColor"]
+- !private ["PSs8Hashable", "blueColor"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "performSeguePop"]
+- ["PSs8Hashable", "performSeguePush"]
+- ["PSs8Hashable", "pushSegue"]
+- !private ["PSs8Hashable", "redColor"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "blueColor"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "performSeguePop"]
+- ["PSo8NSCoding", "performSeguePush"]
+- ["PSo8NSCoding", "pushSegue"]
+- !private ["PSo8NSCoding", "redColor"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "blueColor"]
+- !private ["PSo9NSCopying", "redColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "performSeguePop"]
+- ["PSo26NSExtensionRequestHandling", "performSeguePush"]
+- ["PSo26NSExtensionRequestHandling", "pushSegue"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "blueColor"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "performSeguePop"]
+- ["CSo8NSObject", "performSeguePush"]
+- ["CSo8NSObject", "pushSegue"]
+- !private ["CSo8NSObject", "redColor"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "blueColor"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "performSeguePop"]
+- ["PSo16NSObjectProtocol", "performSeguePush"]
+- ["PSo16NSObjectProtocol", "pushSegue"]
+- !private ["PSo16NSObjectProtocol", "redColor"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blueColor"]
+- !private ["PSo14NSSecureCoding", "redColor"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "performSeguePop"]
+- ["PSo21UIAppearanceContainer", "performSeguePush"]
+- ["PSo21UIAppearanceContainer", "pushSegue"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "blueColor"]
+- !private ["CSo7UIColor", "redColor"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "performSeguePop"]
+- ["PSo18UIContentContainer", "performSeguePush"]
+- ["PSo18UIContentContainer", "pushSegue"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "performSeguePop"]
+- ["PSo18UIFocusEnvironment", "performSeguePush"]
+- ["PSo18UIFocusEnvironment", "pushSegue"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "performSeguePop"]
+- ["CSo11UIResponder", "performSeguePush"]
+- ["CSo11UIResponder", "pushSegue"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "performSeguePop"]
+- ["PSo16UIStateRestoring", "performSeguePush"]
+- ["PSo16UIStateRestoring", "pushSegue"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "performSeguePop"]
+- ["PSo18UITraitEnvironment", "performSeguePush"]
+- ["PSo18UITraitEnvironment", "pushSegue"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "performSeguePop"]
+- ["CSo16UIViewController", "performSeguePush"]
+- ["CSo16UIViewController", "pushSegue"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["C7NavTest17ViewControllerPop", "UIColor"]
+- ["C7NavTest17ViewControllerPop", "deinit"]
+- ["C7NavTest17ViewControllerPop", "didReceiveMemoryWarning"]
+- ["C7NavTest17ViewControllerPop", "init"]
+- ["C7NavTest17ViewControllerPop", "performSeguePop"]
+- !private ["C7NavTest17ViewControllerPop", "view"]
+- ["C7NavTest17ViewControllerPop", "viewDidLoad"]
+- !private ["C7NavTest18ViewControllerPush", "UIColor"]
+- ["C7NavTest18ViewControllerPush", "deinit"]
+- ["C7NavTest18ViewControllerPush", "didReceiveMemoryWarning"]
+- ["C7NavTest18ViewControllerPush", "init"]
+- ["C7NavTest18ViewControllerPush", "performSeguePush"]
+- ["C7NavTest18ViewControllerPush", "pushSegue"]
+- !private ["C7NavTest18ViewControllerPush", "view"]
+- ["C7NavTest18ViewControllerPush", "viewDidLoad"]
+- ["C7NavTest21ViewControllerPushPop", "deinit"]
+- ["C7NavTest21ViewControllerPushPop", "didReceiveMemoryWarning"]
+- ["C7NavTest21ViewControllerPushPop", "init"]
+- ["C7NavTest21ViewControllerPushPop", "performSeguePop"]
+- ["C7NavTest21ViewControllerPushPop", "performSeguePush"]
+- ["C7NavTest21ViewControllerPushPop", "pushSegue"]
+- ["C7NavTest21ViewControllerPushPop", "viewDidLoad"]
+- !private ["PSs24_ColorLiteralConvertible", "blueColor"]
+- !private ["PSs24_ColorLiteralConvertible", "redColor"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "P7NavTest15CYNavigationPop"
+- "P7NavTest16CYNavigationPush"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "C7NavTest17ViewControllerPop"
+- "C7NavTest18ViewControllerPush"
+- "C7NavTest21ViewControllerPushPop"
+- !private "PSs24_ColorLiteralConvertible"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "08ade36ec76624c99bced0afda7cf93d"
