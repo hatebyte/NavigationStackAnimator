@@ -1,4 +1,4 @@
-# NavigationStackAnimator
+# Navigation Stack Gesture Animator (What a mouth full)
 Navigation Controllers are a pain to make transitions for later in the game.    WELL, NOT ANY MOAR
 
 Now add any navigation transition via an adapation to a protocol.
