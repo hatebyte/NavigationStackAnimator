@@ -40,7 +40,7 @@ The `UIViewController` protocol mixed with a subclass of a `UINavigationControll
 - a dynamic segue to be called  
 - a dynamic animator to perform  
 
- A gesture recognizer powered by a direction extended enum provides:
+A gesture recognizer powered by a direction extended enum provides:
 
 - the flexiblility to change the gesture that invokes the segue 
 - the ability to customize your navigation controller as you see fit
