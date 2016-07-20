@@ -239,7 +239,10 @@ class PopShrinkAnimator: NSObject, UIViewControllerAnimatedTransitioning, Naviga
         let b                               = UIScreen.mainScreen().bounds
         
         firstVCView.frame                   = b
-        secondVCView.transform              = CGAffineTransformMakeScale(0.001, 0.001)
+        secondVCView.frame                  = b
+        secondVCView.transform              = CGAffineTransformMakeScale(0.01, 0.01)
+        firstVCView.transform               = CGAffineTransformMakeScale(1, 1)
+        firstVCView.alpha                   = 1
         secondVCView.alpha                  = 0
  
         context.containerView()!.addSubview(firstVCView)
@@ -289,12 +292,11 @@ class PushShrinkAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navig
             firstVCView.alpha               = 0
             
         }) { [unowned self] (Finished) -> Void in
-            self.navAnimatorDelegate?.enable()
             firstVCView.transform           = CGAffineTransformMakeScale(1, 1)
             secondVCView.transform          = CGAffineTransformMakeScale(1, 1)
             firstVCView.alpha               = 1
             secondVCView.alpha              = 1
-
+            self.navAnimatorDelegate?.enable()
             context.completeTransition(!context.transitionWasCancelled())
         }
     }
