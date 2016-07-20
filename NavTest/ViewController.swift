@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         bottomButton?.setTitle("Horizontal", forState: .Normal)
         leftButton?.setTitle("Fade", forState: .Normal)
         rightButton?.setTitle("Shrink", forState: .Normal)
-//        hideEverything()
         buttonContainer?.backgroundColor = UIColor.grayColor()
     }
  
@@ -47,24 +46,11 @@ class ViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         removeHandlers()
-//        hideEverything()
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-//        showEverything()
     }
-    
-//    func hideEverything() {
-//        pushButton?.hidden = true
-//        popButton?.hidden = true
-//        buttonContainer?.hidden = true
-//    }
-//    func showEverything() {
-//        pushButton?.hidden = false
-//        popButton?.hidden = false
-//        buttonContainer?.hidden = false
-//    }
  
     func addHandlers() {
         topButton?.addTarget(self, action: #selector(topHit), forControlEvents: .TouchUpInside)
