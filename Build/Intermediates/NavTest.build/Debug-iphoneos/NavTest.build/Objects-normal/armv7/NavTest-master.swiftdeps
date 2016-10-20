@@ -1,11 +1,12 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "ebddd256d9381adbd52c8224b65337b8"
-build_time: [507222800, 384634000]
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "3d4adbb7fcb5fa4b28e8f5339dc223cc"
+build_time: [530308050, 150316000]
 inputs:
-  "/Users/scottjones/ios/examples/NavTest/NavTest/AppDelegate.swift": [506299362, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/Animators.swift": [506275948, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/InteractiveGestureNavigation.swift": [507219170, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/VerticalPanGestureNavigator.swift": [506535667, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/ViewController.swift": [506974838, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/NavigationViewController.swift": [507219072, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/HorizontalPanGestureNavigator.swift": [506535700, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/Animators.swift": [527467746, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/VertexAndMagnitude.swift": [527467746, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/ViewController.swift": [530308044, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/AppDelegate.swift": [527467746, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/NavigationViewController.swift": [527468281, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/InteractiveGestureNavigation.swift": [530307893, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/GestureNavigatorRecognizer.swift": [527467746, 0]
+  "/Users/scottjones/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift": [527467746, 0]

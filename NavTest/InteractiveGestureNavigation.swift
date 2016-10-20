@@ -9,27 +9,35 @@
 import UIKit
 
 public protocol CYNavigationPop {
-    func performSeguePop()
+    func performPop()
     var popAnimator:UIViewControllerAnimatedTransitioning? { get }
 }
 
 extension CYNavigationPop where Self : UIViewController {
-    public func performSeguePop() {
-        self.navigationController?.popViewControllerAnimated(true)
+    public func performPop() {
+        let _ = self.navigationController?.popViewController(animated: true)
     }
     var popAnimator:UIViewControllerAnimatedTransitioning? { return nil }
 }
 
 public typealias SeguePush = ()->()
 public protocol CYNavigationPush {
-    func performSeguePush()
+    func performPush()
+    func stackPush()->SeguePush?
     var seguePush:String { get }
     var pushAnimator:UIViewControllerAnimatedTransitioning? { get }
 }
 
 extension CYNavigationPush where Self : UIViewController {
-    public func performSeguePush() {
-        self.performSegueWithIdentifier(seguePush, sender: self)
+    public func performPush() {
+        if let sp = stackPush()  {
+            sp()
+        } else {
+            self.performSegue(withIdentifier: seguePush, sender: self)
+        }
+    }
+    public func stackPush()->SeguePush? {
+        return nil
     }
     public var pushAnimator:UIViewControllerAnimatedTransitioning? {
         return nil
@@ -51,23 +59,23 @@ extension NavigationAnimatable {
     }
     
     public func enable() {
-        self.navigationController.view.userInteractionEnabled = true
+        self.navigationController.view.isUserInteractionEnabled = true
     }
     
     public func disable() {
-        self.navigationController.view.userInteractionEnabled = false
+        self.navigationController.view.isUserInteractionEnabled = false
     }
     
     //MARK: Connect Animators
     public func animator(animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController)->UIViewControllerAnimatedTransitioning? {
-        if operation == .Pop {
+        if operation == .pop {
             return animatorForPop(fromVC)
         } else {
             return animatorForPush(fromVC)
         }
     }
     
-    private func animatorForPop(fromVC:UIViewController)->UIViewControllerAnimatedTransitioning? {
+    fileprivate func animatorForPop(_ fromVC:UIViewController)->UIViewControllerAnimatedTransitioning? {
         guard let poper = fromVC as? CYNavigationPop else {
             print("View controller does not conform to CYNavigationPop protocol")
             return nil
@@ -79,7 +87,7 @@ extension NavigationAnimatable {
         return animator
     }
     
-    private func animatorForPush(fromVC:UIViewController)->UIViewControllerAnimatedTransitioning? {
+    fileprivate func animatorForPush(_ fromVC:UIViewController)->UIViewControllerAnimatedTransitioning? {
         guard let pusher = fromVC as? CYNavigationPush else {
             print("View controller does not conform to CYNavigationPush protocol")
             return nil
@@ -98,7 +106,7 @@ extension NavigationAnimatable {
             return
         }
         isPopping                   = true
-        currentVC.performSeguePop()
+        currentVC.performPop()
     }
     
     public func pushViewController() {
@@ -107,7 +115,7 @@ extension NavigationAnimatable {
             return
         }
         isPopping                   = false
-        currentVC.performSeguePush()
+        currentVC.performPush()
     }
     
 }
@@ -116,22 +124,22 @@ public protocol NavGestureProtocol:class {
     var direction:SwipeDirection { get }
     var navigationAnimatable:NavigationAnimatable { get set }
     var gestureRecognizer:UIGestureRecognizer { get }
-    func gestureFired(recognizer:UIPanGestureRecognizer)
-    func beginInteractiveTransition(recognizer:UIPanGestureRecognizer)
-    func updateInteractiveTransition(recognizer:UIPanGestureRecognizer)
-    func endInteractiveTransition(recognizer:UIPanGestureRecognizer)
+    func gestureFired(_ recognizer:UIPanGestureRecognizer)
+    func beginInteractiveTransition(_ recognizer:UIPanGestureRecognizer)
+    func updateInteractiveTransition(_ recognizer:UIPanGestureRecognizer)
+    func endInteractiveTransition(_ recognizer:UIPanGestureRecognizer)
     func denyGestures()
     func acceptGestures()
     func untie()
 }
 extension NavGestureProtocol {
     
-    func handleFiredGesture(recognizer:UIPanGestureRecognizer) {
-        if recognizer.state == .Began {
+    func handleFiredGesture(_ recognizer:UIPanGestureRecognizer) {
+        if recognizer.state == .began {
             self.beginInteractiveTransition(recognizer)
-        } else if recognizer.state == .Changed {
+        } else if recognizer.state == .changed {
             self.updateInteractiveTransition(recognizer)
-        } else if recognizer.state == .Ended {
+        } else if recognizer.state == .ended {
             self.endInteractiveTransition(recognizer)
         }
     }
@@ -142,12 +150,12 @@ extension NavGestureProtocol {
         self.gestureRecognizer.view?.removeGestureRecognizer(gestureRecognizer)
     }
     
-    public func beginInteractiveTransition(recognizer:UIPanGestureRecognizer) {
+    public func beginInteractiveTransition(_ recognizer:UIPanGestureRecognizer) {
         guard let view = recognizer.view else { return }
         if recognizer != self.gestureRecognizer {
             return
         }
-        let velocity                            = recognizer.velocityInView(view)
+        let velocity                            = recognizer.velocity(in: view)
         if direction.wrongDirection(velocity) {
             return
         }
@@ -159,10 +167,10 @@ extension NavGestureProtocol {
         }
     }
     
-    public func updateInteractiveTransition(recognizer:UIPanGestureRecognizer) {
+    public func updateInteractiveTransition(_ recognizer:UIPanGestureRecognizer) {
         guard let view = recognizer.view else { return }
         guard let ic = navigationAnimatable.interactionController else { return }
-        let translation                         = recognizer.translationInView(view)
+        let translation                         = recognizer.translation(in: view)
         let percent                             = direction.percent(translation, view: view)
         if navigationAnimatable.isPopping {
             if !direction.popPercentPlaneBroken(percent) { return }
@@ -170,20 +178,20 @@ extension NavGestureProtocol {
             if !direction.pushPercentPlaneBroken(percent) { return }
         }
         let abspercent                          = fabs(percent)
-        ic.updateInteractiveTransition(abspercent)
+        ic.update(abspercent)
     }
     
-    public func endInteractiveTransition(recognizer:UIPanGestureRecognizer) {
+    public func endInteractiveTransition(_ recognizer:UIPanGestureRecognizer) {
         guard let view = recognizer.view else { return }
-        let translation                         = recognizer.translationInView(view)
+        let translation                         = recognizer.translation(in: view)
         let percent                             = direction.percent(translation, view: view)
         let abpercent                           = fabs(percent)
         guard let ic = navigationAnimatable.interactionController else { return }
         if navigationAnimatable.isPopping {
             if direction.popPercentPlaneBroken(percent) {
                 if abpercent > 0.10 {
-                    if direction.popPlaneBroken(recognizer.velocityInView(view)) {
-                        ic.finishInteractiveTransition()
+                    if direction.popPlaneBroken(recognizer.velocity(in: view)) {
+                        ic.finish()
                         navigationAnimatable.interactionController = nil
                         return
                     }
@@ -192,15 +200,16 @@ extension NavGestureProtocol {
         } else {
             if direction.pushPercentPlaneBroken(percent) {
                 if abpercent > 0.10 {
-                    if direction.pushPlaneBroken(recognizer.velocityInView(view)) {
-                        ic.finishInteractiveTransition()
+                    if direction.pushPlaneBroken(recognizer.velocity(in: view)) {
+                        ic.finish()
                         navigationAnimatable.interactionController = nil
                         return
                     }
                 }
             }
         }
-        ic.cancelInteractiveTransition()
+        ic.cancel()
         navigationAnimatable.interactionController = nil
     }
+    
 }

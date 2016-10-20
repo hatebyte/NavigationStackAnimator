@@ -1,7 +1,8 @@
-/Users/scottjones/ios/examples/NavTest/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/Animators.o
-/Users/scottjones/ios/examples/NavTest/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/VerticalPanGestureNavigator.o
-/Users/scottjones/ios/examples/NavTest/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/HorizontalPanGestureNavigator.o
-/Users/scottjones/ios/examples/NavTest/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/ViewController.o
-/Users/scottjones/ios/examples/NavTest/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/AppDelegate.o
-/Users/scottjones/ios/examples/NavTest/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/NavigationViewController.o
-/Users/scottjones/ios/examples/NavTest/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/InteractiveGestureNavigation.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/Animators.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/VertexAndMagnitude.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/ViewController.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/AppDelegate.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/NavigationViewController.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/InteractiveGestureNavigation.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/GestureNavigatorRecognizer.o
+/Users/scottjones/ios/NavigationStackAnimator/Build/Intermediates/NavTest.build/Debug-iphoneos/NavTest.build/Objects-normal/arm64/NavigationStackAnimator.o

@@ -1,0 +1,665 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CYNavigationPop"
+- "SeguePush"
+- "CYNavigationPush"
+- "NavigationAnimatable"
+- "NavGestureProtocol"
+provides-nominal:
+- "P7NavTest15CYNavigationPop"
+- "P7NavTest16CYNavigationPush"
+- "P7NavTest20NavigationAnimatable"
+- "P7NavTest18NavGestureProtocol"
+provides-member:
+- ["P7NavTest15CYNavigationPop", ""]
+- ["P7NavTest16CYNavigationPush", ""]
+- ["P7NavTest20NavigationAnimatable", ""]
+- ["P7NavTest18NavGestureProtocol", ""]
+- ["P7NavTest15CYNavigationPop", "performSeguePop"]
+- ["P7NavTest15CYNavigationPop", "popAnimator"]
+- ["P7NavTest16CYNavigationPush", "performSeguePush"]
+- ["P7NavTest16CYNavigationPush", "pushAnimator"]
+- ["P7NavTest20NavigationAnimatable", "addToNavigationView"]
+- ["P7NavTest20NavigationAnimatable", "enable"]
+- ["P7NavTest20NavigationAnimatable", "disable"]
+- ["P7NavTest20NavigationAnimatable", "animator"]
+- ["P7NavTest20NavigationAnimatable", "popViewController"]
+- ["P7NavTest20NavigationAnimatable", "pushViewController"]
+- ["P7NavTest18NavGestureProtocol", "handleFiredGesture"]
+- ["P7NavTest18NavGestureProtocol", "untie"]
+- ["P7NavTest18NavGestureProtocol", "beginInteractiveTransition"]
+- ["P7NavTest18NavGestureProtocol", "updateInteractiveTransition"]
+- ["P7NavTest18NavGestureProtocol", "endInteractiveTransition"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "BooleanLiteralType"
+- "UINavigationControllerDelegate"
+- "SeguePush"
+- !private "print"
+- "UIPanGestureRecognizer"
+- "UIViewControllerAnimatedTransitioning"
+- "UIPercentDrivenInteractiveTransition"
+- "CYNavigationPop"
+- "UINavigationControllerOperation"
+- "UIGestureRecognizer"
+- !private "!"
+- "String"
+- "NavigationAnimatable"
+- "UIViewController"
+- "NavGestureProtocol"
+- !private "fabs"
+- !private "StringLiteralType"
+- "CastingPrecedence"
+- "UINavigationController"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "!="
+- "Bool"
+- !private ">"
+- "SwipeDirection"
+- !private "NavigationAnimatorIgnorable"
+- "CYNavigationPush"
+depends-member:
+- !private ["Ps9AnyObject", "cancel"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "finish"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isUserInteractionEnabled"]
+- !private ["Ps9AnyObject", "popViewController"]
+- !private ["Ps9AnyObject", "removeGestureRecognizer"]
+- !private ["Ps9AnyObject", "removeTarget"]
+- !private ["Ps9AnyObject", "seguePush"]
+- !private ["Ps9AnyObject", "state"]
+- !private ["Ps9AnyObject", "translation"]
+- !private ["Ps9AnyObject", "update"]
+- !private ["Ps9AnyObject", "velocity"]
+- !private ["Ps9AnyObject", "view"]
+- !private ["Ps9AnyObject", "viewControllers"]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "last"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "last"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "last"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "isUserInteractionEnabled"]
+- !private ["PSo15CALayerDelegate", "removeGestureRecognizer"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC7CGPoint", "deinit"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "cancel"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "finish"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isUserInteractionEnabled"]
+- !private ["Ps7CVarArg", "last"]
+- !private ["Ps7CVarArg", "popViewController"]
+- !private ["Ps7CVarArg", "removeGestureRecognizer"]
+- !private ["Ps7CVarArg", "removeTarget"]
+- !private ["Ps7CVarArg", "seguePush"]
+- !private ["Ps7CVarArg", "state"]
+- !private ["Ps7CVarArg", "translation"]
+- !private ["Ps7CVarArg", "update"]
+- !private ["Ps7CVarArg", "velocity"]
+- !private ["Ps7CVarArg", "view"]
+- !private ["Ps7CVarArg", "viewControllers"]
+- ["P7NavTest15CYNavigationPop", "UIViewController"]
+- ["P7NavTest15CYNavigationPop", "UIViewControllerAnimatedTransitioning"]
+- ["P7NavTest15CYNavigationPop", "deinit"]
+- !private ["P7NavTest15CYNavigationPop", "navigationController"]
+- ["P7NavTest15CYNavigationPop", "performSeguePop"]
+- ["P7NavTest15CYNavigationPop", "popAnimator"]
+- ["P7NavTest15CYNavigationPop", ""]
+- ["P7NavTest16CYNavigationPush", "String"]
+- ["P7NavTest16CYNavigationPush", "UIViewController"]
+- ["P7NavTest16CYNavigationPush", "UIViewControllerAnimatedTransitioning"]
+- ["P7NavTest16CYNavigationPush", "deinit"]
+- !private ["P7NavTest16CYNavigationPush", "performSegue"]
+- ["P7NavTest16CYNavigationPush", "performSeguePush"]
+- ["P7NavTest16CYNavigationPush", "pushAnimator"]
+- ["P7NavTest16CYNavigationPush", "seguePush"]
+- ["P7NavTest16CYNavigationPush", ""]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "last"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "cancel"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "finish"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isUserInteractionEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "last"]
+- !private ["Ps28CustomDebugStringConvertible", "popViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "removeGestureRecognizer"]
+- !private ["Ps28CustomDebugStringConvertible", "removeTarget"]
+- !private ["Ps28CustomDebugStringConvertible", "seguePush"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "state"]
+- !private ["Ps28CustomDebugStringConvertible", "translation"]
+- !private ["Ps28CustomDebugStringConvertible", "update"]
+- !private ["Ps28CustomDebugStringConvertible", "velocity"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- !private ["Ps28CustomDebugStringConvertible", "viewControllers"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "delegate"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "last"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps17CustomReflectable", "view"]
+- !private ["Ps17CustomReflectable", "viewControllers"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "cancel"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "finish"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isUserInteractionEnabled"]
+- !private ["Ps23CustomStringConvertible", "last"]
+- !private ["Ps23CustomStringConvertible", "popViewController"]
+- !private ["Ps23CustomStringConvertible", "removeGestureRecognizer"]
+- !private ["Ps23CustomStringConvertible", "removeTarget"]
+- !private ["Ps23CustomStringConvertible", "seguePush"]
+- !private ["Ps23CustomStringConvertible", "state"]
+- !private ["Ps23CustomStringConvertible", "translation"]
+- !private ["Ps23CustomStringConvertible", "update"]
+- !private ["Ps23CustomStringConvertible", "velocity"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- !private ["Ps23CustomStringConvertible", "viewControllers"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "began"]
+- !private ["Ps9Equatable", "cancel"]
+- !private ["Ps9Equatable", "changed"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "ended"]
+- !private ["Ps9Equatable", "finish"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isUserInteractionEnabled"]
+- !private ["Ps9Equatable", "pop"]
+- !private ["Ps9Equatable", "popViewController"]
+- !private ["Ps9Equatable", "removeGestureRecognizer"]
+- !private ["Ps9Equatable", "removeTarget"]
+- !private ["Ps9Equatable", "seguePush"]
+- !private ["Ps9Equatable", "state"]
+- !private ["Ps9Equatable", "translation"]
+- !private ["Ps9Equatable", "update"]
+- !private ["Ps9Equatable", "velocity"]
+- !private ["Ps9Equatable", "view"]
+- !private ["Ps9Equatable", "viewControllers"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "last"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps23ExpressibleByNilLiteral", "delegate"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps23ExpressibleByNilLiteral", "view"]
+- !private ["Ps23ExpressibleByNilLiteral", "viewControllers"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "began"]
+- !private ["Ps8Hashable", "cancel"]
+- !private ["Ps8Hashable", "changed"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "ended"]
+- !private ["Ps8Hashable", "finish"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isUserInteractionEnabled"]
+- !private ["Ps8Hashable", "pop"]
+- !private ["Ps8Hashable", "popViewController"]
+- !private ["Ps8Hashable", "removeGestureRecognizer"]
+- !private ["Ps8Hashable", "removeTarget"]
+- !private ["Ps8Hashable", "seguePush"]
+- !private ["Ps8Hashable", "state"]
+- !private ["Ps8Hashable", "translation"]
+- !private ["Ps8Hashable", "update"]
+- !private ["Ps8Hashable", "velocity"]
+- !private ["Ps8Hashable", "view"]
+- !private ["Ps8Hashable", "viewControllers"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "last"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "last"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "last"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "last"]
+- !private ["PSo8NSCoding", "delegate"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isUserInteractionEnabled"]
+- !private ["PSo8NSCoding", "popViewController"]
+- !private ["PSo8NSCoding", "removeGestureRecognizer"]
+- !private ["PSo8NSCoding", "seguePush"]
+- !private ["PSo8NSCoding", "view"]
+- !private ["PSo8NSCoding", "viewControllers"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "delegate"]
+- !private ["PSo26NSExtensionRequestHandling", "popViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "seguePush"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- !private ["PSo26NSExtensionRequestHandling", "viewControllers"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "UIViewControllerAnimatedTransitioning"]
+- !private ["CSo8NSObject", "cancel"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "finish"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isUserInteractionEnabled"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "performSegue"]
+- !private ["CSo8NSObject", "popViewController"]
+- !private ["CSo8NSObject", "removeGestureRecognizer"]
+- !private ["CSo8NSObject", "removeTarget"]
+- !private ["CSo8NSObject", "seguePush"]
+- !private ["CSo8NSObject", "state"]
+- !private ["CSo8NSObject", "translation"]
+- !private ["CSo8NSObject", "update"]
+- !private ["CSo8NSObject", "velocity"]
+- !private ["CSo8NSObject", "view"]
+- !private ["CSo8NSObject", "viewControllers"]
+- ["PSo16NSObjectProtocol", "Bool"]
+- !private ["PSo16NSObjectProtocol", "CYNavigationPop"]
+- !private ["PSo16NSObjectProtocol", "CYNavigationPush"]
+- !private ["PSo16NSObjectProtocol", "NavigationAnimatorIgnorable"]
+- ["PSo16NSObjectProtocol", "UINavigationController"]
+- ["PSo16NSObjectProtocol", "UINavigationControllerOperation"]
+- ["PSo16NSObjectProtocol", "UIPercentDrivenInteractiveTransition"]
+- ["PSo16NSObjectProtocol", "UIViewController"]
+- ["PSo16NSObjectProtocol", "UIViewControllerAnimatedTransitioning"]
+- ["PSo16NSObjectProtocol", "animator"]
+- !private ["PSo16NSObjectProtocol", "animatorForPop"]
+- !private ["PSo16NSObjectProtocol", "animatorForPush"]
+- !private ["PSo16NSObjectProtocol", "cancel"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "finish"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "interactionController"]
+- ["PSo16NSObjectProtocol", "isPopping"]
+- !private ["PSo16NSObjectProtocol", "isUserInteractionEnabled"]
+- ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "popViewController"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
+- !private ["PSo16NSObjectProtocol", "removeGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "removeTarget"]
+- !private ["PSo16NSObjectProtocol", "seguePush"]
+- !private ["PSo16NSObjectProtocol", "state"]
+- !private ["PSo16NSObjectProtocol", "translation"]
+- !private ["PSo16NSObjectProtocol", "update"]
+- !private ["PSo16NSObjectProtocol", "velocity"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- !private ["PSo16NSObjectProtocol", "viewControllers"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["P7NavTest18NavGestureProtocol", "NavigationAnimatable"]
+- ["P7NavTest18NavGestureProtocol", "SwipeDirection"]
+- ["P7NavTest18NavGestureProtocol", "UIGestureRecognizer"]
+- ["P7NavTest18NavGestureProtocol", "UIPanGestureRecognizer"]
+- !private ["P7NavTest18NavGestureProtocol", "UIPercentDrivenInteractiveTransition"]
+- ["P7NavTest18NavGestureProtocol", "acceptGestures"]
+- ["P7NavTest18NavGestureProtocol", "beginInteractiveTransition"]
+- !private ["P7NavTest18NavGestureProtocol", "deinit"]
+- ["P7NavTest18NavGestureProtocol", "denyGestures"]
+- ["P7NavTest18NavGestureProtocol", "direction"]
+- ["P7NavTest18NavGestureProtocol", "endInteractiveTransition"]
+- !private ["P7NavTest18NavGestureProtocol", "fabs"]
+- ["P7NavTest18NavGestureProtocol", "gestureFired"]
+- ["P7NavTest18NavGestureProtocol", "gestureRecognizer"]
+- ["P7NavTest18NavGestureProtocol", "handleFiredGesture"]
+- ["P7NavTest18NavGestureProtocol", "navigationAnimatable"]
+- ["P7NavTest18NavGestureProtocol", "untie"]
+- ["P7NavTest18NavGestureProtocol", "updateInteractiveTransition"]
+- ["P7NavTest18NavGestureProtocol", ""]
+- ["P7NavTest20NavigationAnimatable", "Bool"]
+- !private ["P7NavTest20NavigationAnimatable", "CYNavigationPop"]
+- !private ["P7NavTest20NavigationAnimatable", "CYNavigationPush"]
+- !private ["P7NavTest20NavigationAnimatable", "NavigationAnimatorIgnorable"]
+- ["P7NavTest20NavigationAnimatable", "UINavigationController"]
+- ["P7NavTest20NavigationAnimatable", "UINavigationControllerOperation"]
+- ["P7NavTest20NavigationAnimatable", "UIPercentDrivenInteractiveTransition"]
+- ["P7NavTest20NavigationAnimatable", "UIViewController"]
+- ["P7NavTest20NavigationAnimatable", "UIViewControllerAnimatedTransitioning"]
+- ["P7NavTest20NavigationAnimatable", "addToNavigationView"]
+- ["P7NavTest20NavigationAnimatable", "animator"]
+- !private ["P7NavTest20NavigationAnimatable", "animatorForPop"]
+- !private ["P7NavTest20NavigationAnimatable", "animatorForPush"]
+- ["P7NavTest20NavigationAnimatable", "disable"]
+- ["P7NavTest20NavigationAnimatable", "enable"]
+- ["P7NavTest20NavigationAnimatable", "interactionController"]
+- ["P7NavTest20NavigationAnimatable", "isPopping"]
+- ["P7NavTest20NavigationAnimatable", "navigationController"]
+- ["P7NavTest20NavigationAnimatable", "popViewController"]
+- !private ["P7NavTest20NavigationAnimatable", "print"]
+- ["P7NavTest20NavigationAnimatable", "pushViewController"]
+- ["P7NavTest20NavigationAnimatable", ""]
+- !private ["P7NavTest27NavigationAnimatorIgnorable", "deinit"]
+- !private ["P7NavTest27NavigationAnimatorIgnorable", "navAnimatorDelegate"]
+- ["Sq", "deinit"]
+- !private ["Sq", "delegate"]
+- ["Sq", "some"]
+- !private ["Sq", "view"]
+- !private ["Sq", "viewControllers"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "last"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "last"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "last"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "last"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "began"]
+- !private ["Ps16RawRepresentable", "changed"]
+- !private ["Ps16RawRepresentable", "ended"]
+- !private ["Ps16RawRepresentable", "pop"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "last"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- ["V7NavTest14SwipeDirection", "deinit"]
+- !private ["V7NavTest14SwipeDirection", "percent"]
+- !private ["V7NavTest14SwipeDirection", "popPercentPlaneBroken"]
+- !private ["V7NavTest14SwipeDirection", "popPlaneBroken"]
+- !private ["V7NavTest14SwipeDirection", "pushPercentPlaneBroken"]
+- !private ["V7NavTest14SwipeDirection", "pushPlaneBroken"]
+- !private ["V7NavTest14SwipeDirection", "wrongDirection"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isUserInteractionEnabled"]
+- !private ["PSo29UIAccessibilityIdentification", "removeGestureRecognizer"]
+- !private ["PSo12UIAppearance", "isUserInteractionEnabled"]
+- !private ["PSo12UIAppearance", "removeGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- !private ["PSo21UIAppearanceContainer", "isUserInteractionEnabled"]
+- !private ["PSo21UIAppearanceContainer", "popViewController"]
+- !private ["PSo21UIAppearanceContainer", "removeGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "seguePush"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- !private ["PSo21UIAppearanceContainer", "viewControllers"]
+- !private ["PSo18UIContentContainer", "delegate"]
+- !private ["PSo18UIContentContainer", "popViewController"]
+- !private ["PSo18UIContentContainer", "seguePush"]
+- !private ["PSo18UIContentContainer", "view"]
+- !private ["PSo18UIContentContainer", "viewControllers"]
+- !private ["PSo17UICoordinateSpace", "isUserInteractionEnabled"]
+- !private ["PSo17UICoordinateSpace", "removeGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "isUserInteractionEnabled"]
+- !private ["PSo13UIDynamicItem", "removeGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- !private ["PSo18UIFocusEnvironment", "isUserInteractionEnabled"]
+- !private ["PSo18UIFocusEnvironment", "popViewController"]
+- !private ["PSo18UIFocusEnvironment", "removeGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "seguePush"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- !private ["PSo18UIFocusEnvironment", "viewControllers"]
+- !private ["PSo11UIFocusItem", "isUserInteractionEnabled"]
+- !private ["PSo11UIFocusItem", "removeGestureRecognizer"]
+- ["CSo19UIGestureRecognizer", "deinit"]
+- !private ["CSo19UIGestureRecognizer", "delegate"]
+- !private ["CSo19UIGestureRecognizer", "removeTarget"]
+- !private ["CSo19UIGestureRecognizer", "state"]
+- !private ["CSo19UIGestureRecognizer", "translation"]
+- !private ["CSo19UIGestureRecognizer", "velocity"]
+- !private ["CSo19UIGestureRecognizer", "view"]
+- !private ["OSC24UIGestureRecognizerState", "RawValue"]
+- !private ["OSC24UIGestureRecognizerState", "began"]
+- !private ["OSC24UIGestureRecognizerState", "changed"]
+- ["OSC24UIGestureRecognizerState", "deinit"]
+- !private ["OSC24UIGestureRecognizerState", "ended"]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "delegate"]
+- !private ["CSo22UINavigationController", "popViewController"]
+- !private ["CSo22UINavigationController", "view"]
+- !private ["CSo22UINavigationController", "viewControllers"]
+- ["PSo30UINavigationControllerDelegate", "Bool"]
+- !private ["PSo30UINavigationControllerDelegate", "CYNavigationPop"]
+- !private ["PSo30UINavigationControllerDelegate", "CYNavigationPush"]
+- !private ["PSo30UINavigationControllerDelegate", "NavigationAnimatorIgnorable"]
+- ["PSo30UINavigationControllerDelegate", "UINavigationController"]
+- ["PSo30UINavigationControllerDelegate", "UINavigationControllerOperation"]
+- ["PSo30UINavigationControllerDelegate", "UIPercentDrivenInteractiveTransition"]
+- ["PSo30UINavigationControllerDelegate", "UIViewController"]
+- ["PSo30UINavigationControllerDelegate", "UIViewControllerAnimatedTransitioning"]
+- ["PSo30UINavigationControllerDelegate", "animator"]
+- !private ["PSo30UINavigationControllerDelegate", "animatorForPop"]
+- !private ["PSo30UINavigationControllerDelegate", "animatorForPush"]
+- ["PSo30UINavigationControllerDelegate", "interactionController"]
+- ["PSo30UINavigationControllerDelegate", "isPopping"]
+- ["PSo30UINavigationControllerDelegate", "navigationController"]
+- !private ["PSo30UINavigationControllerDelegate", "popViewController"]
+- !private ["PSo30UINavigationControllerDelegate", "print"]
+- !private ["PSo30UINavigationControllerDelegate", "pushViewController"]
+- ["PSo30UINavigationControllerDelegate", ""]
+- !private ["OSC31UINavigationControllerOperation", "RawValue"]
+- ["OSC31UINavigationControllerOperation", "deinit"]
+- !private ["OSC31UINavigationControllerOperation", "pop"]
+- ["CSo22UIPanGestureRecognizer", "deinit"]
+- !private ["CSo22UIPanGestureRecognizer", "state"]
+- !private ["CSo22UIPanGestureRecognizer", "translation"]
+- !private ["CSo22UIPanGestureRecognizer", "velocity"]
+- !private ["CSo22UIPanGestureRecognizer", "view"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "cancel"]
+- ["CSo36UIPercentDrivenInteractiveTransition", "deinit"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "finish"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "init"]
+- !private ["CSo36UIPercentDrivenInteractiveTransition", "update"]
+- ["CSo11UIResponder", "UIViewControllerAnimatedTransitioning"]
+- !private ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "isUserInteractionEnabled"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "performSegue"]
+- !private ["CSo11UIResponder", "popViewController"]
+- !private ["CSo11UIResponder", "removeGestureRecognizer"]
+- !private ["CSo11UIResponder", "seguePush"]
+- !private ["CSo11UIResponder", "view"]
+- !private ["CSo11UIResponder", "viewControllers"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
+- !private ["PSo30UIResponderStandardEditActions", "isUserInteractionEnabled"]
+- !private ["PSo30UIResponderStandardEditActions", "popViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "removeGestureRecognizer"]
+- !private ["PSo30UIResponderStandardEditActions", "seguePush"]
+- !private ["PSo30UIResponderStandardEditActions", "view"]
+- !private ["PSo30UIResponderStandardEditActions", "viewControllers"]
+- !private ["PSo16UIStateRestoring", "delegate"]
+- !private ["PSo16UIStateRestoring", "popViewController"]
+- !private ["PSo16UIStateRestoring", "seguePush"]
+- !private ["PSo16UIStateRestoring", "view"]
+- !private ["PSo16UIStateRestoring", "viewControllers"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- !private ["PSo18UITraitEnvironment", "isUserInteractionEnabled"]
+- !private ["PSo18UITraitEnvironment", "popViewController"]
+- !private ["PSo18UITraitEnvironment", "removeGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "seguePush"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- !private ["PSo18UITraitEnvironment", "viewControllers"]
+- ["CSo6UIView", "deinit"]
+- !private ["CSo6UIView", "isUserInteractionEnabled"]
+- !private ["CSo6UIView", "removeGestureRecognizer"]
+- ["CSo16UIViewController", "UIViewControllerAnimatedTransitioning"]
+- ["CSo16UIViewController", "deinit"]
+- !private ["CSo16UIViewController", "delegate"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "performSegue"]
+- !private ["CSo16UIViewController", "popViewController"]
+- !private ["CSo16UIViewController", "seguePush"]
+- !private ["CSo16UIViewController", "view"]
+- !private ["CSo16UIViewController", "viewControllers"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "cancel"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "finish"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "init"]
+- !private ["PSo40UIViewControllerInteractiveTransitioning", "update"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "last"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isUserInteractionEnabled"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeGestureRecognizer"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "last"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "began"]
+- !private ["Ps9_Hashable", "cancel"]
+- !private ["Ps9_Hashable", "changed"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "ended"]
+- !private ["Ps9_Hashable", "finish"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isUserInteractionEnabled"]
+- !private ["Ps9_Hashable", "pop"]
+- !private ["Ps9_Hashable", "popViewController"]
+- !private ["Ps9_Hashable", "removeGestureRecognizer"]
+- !private ["Ps9_Hashable", "removeTarget"]
+- !private ["Ps9_Hashable", "seguePush"]
+- !private ["Ps9_Hashable", "state"]
+- !private ["Ps9_Hashable", "translation"]
+- !private ["Ps9_Hashable", "update"]
+- !private ["Ps9_Hashable", "velocity"]
+- !private ["Ps9_Hashable", "view"]
+- !private ["Ps9_Hashable", "viewControllers"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "last"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "V12CoreGraphics7CGFloat"
+- "VSC7CGPoint"
+- !private "Ps7CVarArg"
+- "P7NavTest15CYNavigationPop"
+- "P7NavTest16CYNavigationPush"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "P7NavTest18NavGestureProtocol"
+- "P7NavTest20NavigationAnimatable"
+- !private "P7NavTest27NavigationAnimatorIgnorable"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- "SS"
+- "V7NavTest14SwipeDirection"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo19UIGestureRecognizer"
+- "OSC24UIGestureRecognizerState"
+- "CSo22UINavigationController"
+- "PSo30UINavigationControllerDelegate"
+- "OSC31UINavigationControllerOperation"
+- "CSo22UIPanGestureRecognizer"
+- "CSo36UIPercentDrivenInteractiveTransition"
+- "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSo40UIViewControllerInteractiveTransitioning"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "f1dac2de3b7fbba5c5ff9904a8b99635"

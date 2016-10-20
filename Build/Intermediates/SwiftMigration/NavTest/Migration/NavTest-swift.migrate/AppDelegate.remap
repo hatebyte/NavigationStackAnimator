@@ -1,0 +1,44 @@
+[
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 285,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 359,
+  "remove": 8,
+  "text": "UIApplicationLaunchOptionsKey",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 371,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 526,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 1044,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 1482,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 1713,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift",
+  "offset": 1979,
+  "text": "_ ",
+ }
+]

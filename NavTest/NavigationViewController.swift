@@ -9,34 +9,34 @@
 import UIKit
 
 enum AnimationType {
-    case Vertical
-    case Horizontal
-    case Shrink
-    case Fade
+    case vertical
+    case horizontal
+    case shrink
+    case fade
 }
 
 class NavigationViewController : UINavigationController {
    
-    var animationType:AnimationType     = .Vertical
+    var animationType:AnimationType     = .vertical
     var navAnimationManager:NavigationAnimatable!
     var gestureRecognizer:GestureNavigatorRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navAnimationManager             = NavigationStackAnimator(nav:self)
-        let direction                   = SwipeDirection(vertex:.Y, magnitude:.Positive)
+        let direction                   = SwipeDirection(vertex:.y, magnitude:.positive)
         gestureRecognizer               = GestureNavigatorRecognizer(navigationAnimatable: navAnimationManager, direction:direction)
         
-        changeGestureForType(.Shrink)
+        changeGestureForType(.shrink)
     }
 
-    func changeGestureForType(type:AnimationType) {
+    func changeGestureForType(_ type:AnimationType) {
         animationType = type
         switch animationType {
-        case .Vertical:
-            gestureRecognizer.direction = SwipeDirection(vertex:.Y, magnitude:.Positive)
+        case .vertical:
+            gestureRecognizer.direction = SwipeDirection(vertex:.y, magnitude:.positive)
         default:
-            gestureRecognizer.direction = SwipeDirection(vertex:.X, magnitude:.Negative)
+            gestureRecognizer.direction = SwipeDirection(vertex:.x, magnitude:.negative)
         }
     }
     

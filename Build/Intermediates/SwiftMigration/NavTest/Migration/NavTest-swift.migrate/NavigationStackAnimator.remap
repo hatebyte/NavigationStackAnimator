@@ -1,0 +1,36 @@
+[
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift",
+  "offset": 636,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift",
+  "offset": 733,
+  "remove": 10,
+  "text": "r",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift",
+  "offset": 853,
+  "remove": 15,
+  "text": "m",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift",
+  "offset": 977,
+  "remove": 15,
+  "text": "o",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift",
+  "offset": 1224,
+  "text": "_ ",
+ },
+ {
+  "file": "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift",
+  "offset": 1293,
+  "remove": 20,
+  "text": "r",
+ }
+]

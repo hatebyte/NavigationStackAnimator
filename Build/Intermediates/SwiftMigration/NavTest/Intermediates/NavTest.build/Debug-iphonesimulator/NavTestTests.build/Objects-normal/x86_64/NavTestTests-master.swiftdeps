@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "6831774c1b5838ae5dbd7e716719a8c6"
+build_time: [527467739, 814346000]
+inputs:
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTestTests/NavTestTests.swift": [505327995, 0]

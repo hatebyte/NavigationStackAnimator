@@ -20,49 +20,49 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topButton?.setTitleColor(UIColor.whiteColor(), forState: .Disabled)
-        bottomButton?.setTitleColor(UIColor.whiteColor(), forState: .Disabled)
-        leftButton?.setTitleColor(UIColor.whiteColor(), forState: .Disabled)
-        rightButton?.setTitleColor(UIColor.whiteColor(), forState: .Disabled)
+        topButton?.setTitleColor(UIColor.white, for: .disabled)
+        bottomButton?.setTitleColor(UIColor.white, for: .disabled)
+        leftButton?.setTitleColor(UIColor.white, for: .disabled)
+        rightButton?.setTitleColor(UIColor.white, for: .disabled)
        
-        topButton?.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        bottomButton?.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        leftButton?.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
-        rightButton?.setTitleColor(UIColor.darkGrayColor(), forState: .Normal)
+        topButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
+        bottomButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
+        leftButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
+        rightButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
         
-        topButton?.setTitle("Vertical", forState: .Normal)
-        bottomButton?.setTitle("Horizontal", forState: .Normal)
-        leftButton?.setTitle("Fade", forState: .Normal)
-        rightButton?.setTitle("Shrink", forState: .Normal)
-        buttonContainer?.backgroundColor = UIColor.grayColor()
+        topButton?.setTitle("Vertical", for: UIControlState())
+        bottomButton?.setTitle("Horizontal", for: UIControlState())
+        leftButton?.setTitle("Fade", for: UIControlState())
+        rightButton?.setTitle("Shrink", for: UIControlState())
+        buttonContainer?.backgroundColor = UIColor.gray
     }
  
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addHandlers()
         updateButtons()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         removeHandlers()
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
  
     func addHandlers() {
-        topButton?.addTarget(self, action: #selector(topHit), forControlEvents: .TouchUpInside)
-        bottomButton?.addTarget(self, action: #selector(bottomHit), forControlEvents: .TouchUpInside)
-        rightButton?.addTarget(self, action: #selector(rightHit), forControlEvents: .TouchUpInside)
-        leftButton?.addTarget(self, action: #selector(leftHit), forControlEvents: .TouchUpInside)
+        topButton?.addTarget(self, action: #selector(topHit), for: .touchUpInside)
+        bottomButton?.addTarget(self, action: #selector(bottomHit), for: .touchUpInside)
+        rightButton?.addTarget(self, action: #selector(rightHit), for: .touchUpInside)
+        leftButton?.addTarget(self, action: #selector(leftHit), for: .touchUpInside)
     }
     func removeHandlers() {
-        topButton?.removeTarget(self, action: #selector(topHit), forControlEvents: .TouchUpInside)
-        bottomButton?.removeTarget(self, action: #selector(bottomHit), forControlEvents: .TouchUpInside)
-        rightButton?.removeTarget(self, action: #selector(rightHit), forControlEvents: .TouchUpInside)
-        leftButton?.removeTarget(self, action: #selector(leftHit), forControlEvents: .TouchUpInside)
+        topButton?.removeTarget(self, action: #selector(topHit), for: .touchUpInside)
+        bottomButton?.removeTarget(self, action: #selector(bottomHit), for: .touchUpInside)
+        rightButton?.removeTarget(self, action: #selector(rightHit), for: .touchUpInside)
+        leftButton?.removeTarget(self, action: #selector(leftHit), for: .touchUpInside)
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,35 +75,35 @@ class ViewController: UIViewController {
     }
   
     func topHit() {
-        gestureNavigationController?.changeGestureForType(.Vertical)
+        gestureNavigationController?.changeGestureForType(.vertical)
         updateButtons()
     }
     
     func bottomHit() {
-        gestureNavigationController?.changeGestureForType(.Horizontal)
+        gestureNavigationController?.changeGestureForType(.horizontal)
         updateButtons()
     }
     
     func rightHit() {
-        gestureNavigationController?.changeGestureForType(.Shrink)
+        gestureNavigationController?.changeGestureForType(.shrink)
         updateButtons()
     }
     
     func leftHit() {
-        gestureNavigationController?.changeGestureForType(.Fade)
+        gestureNavigationController?.changeGestureForType(.fade)
         updateButtons()
     }
     
     func getPushAnimator()->UIViewControllerAnimatedTransitioning? {
         if let gn = self.gestureNavigationController {
             switch gn.animationType {
-            case .Vertical:
+            case .vertical:
                 return PushBottomAnimator()
-            case .Horizontal:
+            case .horizontal:
                 return PushLeftAnimator()
-            case .Fade:
+            case .fade:
                 return PushFadeAnimator()
-            case .Shrink:
+            case .shrink:
                 return PushShrinkAnimator()
             }
         }
@@ -113,13 +113,13 @@ class ViewController: UIViewController {
     func getPopAnimator()->UIViewControllerAnimatedTransitioning? {
         if let gn = self.gestureNavigationController {
             switch gn.animationType {
-            case .Vertical:
+            case .vertical:
                 return PopTopAnimator()
-            case .Horizontal:
+            case .horizontal:
                 return PopRightAnimator()
-            case .Fade:
+            case .fade:
                 return PopFadeAnimator()
-            case .Shrink:
+            case .shrink:
                 return PopShrinkAnimator()
             }
         }
@@ -130,36 +130,42 @@ class ViewController: UIViewController {
     }
     
     func updateButtons() {
-        topButton?.enabled = true
-        bottomButton?.enabled = true
-        leftButton?.enabled = true
-        rightButton?.enabled = true
+        topButton?.isEnabled = true
+        bottomButton?.isEnabled = true
+        leftButton?.isEnabled = true
+        rightButton?.isEnabled = true
         if let gn = self.gestureNavigationController {
             switch gn.animationType {
-            case .Vertical:
-                topButton?.enabled = false
-            case .Horizontal:
-                bottomButton?.enabled = false
-            case .Fade:
-                leftButton?.enabled = false
-            case .Shrink:
-                rightButton?.enabled = false
+            case .vertical:
+                topButton?.isEnabled = false
+            case .horizontal:
+                bottomButton?.isEnabled = false
+            case .fade:
+                leftButton?.isEnabled = false
+            case .shrink:
+                rightButton?.isEnabled = false
             }
         }
     }
     
 }
 
-
-
 class ViewControllerPush: ViewController {
+    var seguePushBlock:SeguePush? 
     @IBAction func push() {
-        performSeguePush()
+        performPush()
     }
 }
 extension ViewControllerPush : CYNavigationPush {
     var seguePush:String {
         return "firstViewControllerPush"
+    }
+    func stackPush()->SeguePush? {
+        return {
+            print("WHOOOT!!!! PUSH MAN")
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewControllerPushPop")
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     var pushAnimator:UIViewControllerAnimatedTransitioning? { return self.getPushAnimator() }
 }
@@ -168,10 +174,10 @@ extension ViewControllerPush : CYNavigationPush {
 
 class ViewControllerPushPop: ViewController {
     @IBAction func push() {
-        performSeguePush()
+        performPush()
     }
     @IBAction func pop() {
-        performSeguePop()
+        performPop()
     }
 }
 extension ViewControllerPushPop : CYNavigationPush {
@@ -188,7 +194,7 @@ extension ViewControllerPushPop : CYNavigationPop {
 
 class ViewControllerPop: ViewController {
     @IBAction func pop() {
-        performSeguePop()
+        performPop()
     }
 }
 extension ViewControllerPop : CYNavigationPop  {

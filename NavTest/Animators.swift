@@ -16,34 +16,34 @@ class PopRightAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navigat
    
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
         
-        let b = context.containerView()!.bounds
+        let b = context.containerView.bounds
         let screenWidth                     = b.size.width
         let screenHeight                    = b.size.height
         
-        firstVCView.frame                   = b
-        secondVCView.frame                  = CGRectMake(-screenWidth, 0, screenWidth, screenHeight)
+        firstVCView?.frame                   = b
+        secondVCView?.frame                  = CGRect(x: -screenWidth, y: 0, width: screenWidth, height: screenHeight)
         
-        context.containerView()!.addSubview(secondVCView)
-        context.containerView()!.insertSubview(firstVCView, aboveSubview:secondVCView)
+        context.containerView.addSubview(secondVCView!)
+        context.containerView.insertSubview(firstVCView!, aboveSubview:secondVCView!)
         
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            secondVCView.frame              = b
-            firstVCView.frame               = CGRectMake(screenWidth, 0, screenWidth, screenHeight)
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            secondVCView?.frame              = b
+            firstVCView?.frame               = CGRect(x: screenWidth, y: 0, width: screenWidth, height: screenHeight)
             
-        }) { [unowned self] (Finished) -> Void in
+        }, completion: { [unowned self] (Finished) -> Void in
             self.navAnimatorDelegate?.enable()
-                context.completeTransition(!context.transitionWasCancelled())
-        }
+                context.completeTransition(!context.transitionWasCancelled)
+        }) 
     }
     
 }
@@ -52,35 +52,35 @@ class PushLeftAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navigat
     
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
         
-        let b = UIScreen.mainScreen().bounds
+        let b = UIScreen.main.bounds
         let screenWidth                     = b.size.width
         let screenHeight                    = b.size.height
         
-        secondVCView.frame                  = CGRectMake(screenWidth, 0, screenWidth, screenHeight)
-        firstVCView.frame                   = b
+        secondVCView?.frame                  = CGRect(x: screenWidth, y: 0, width: screenWidth, height: screenHeight)
+        firstVCView?.frame                   = b
         
-        context.containerView()!.addSubview(firstVCView)
-        context.containerView()!.insertSubview(secondVCView, aboveSubview:firstVCView)
+        context.containerView.addSubview(firstVCView!)
+        context.containerView.insertSubview(secondVCView!, aboveSubview:firstVCView!)
         
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            secondVCView.frame              = b
-            firstVCView.frame               = CGRectMake(-screenWidth, 0, screenWidth, screenHeight)
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            secondVCView?.frame              = b
+            firstVCView?.frame               = CGRect(x: -screenWidth, y: 0, width: screenWidth, height: screenHeight)
             
-        }) { [unowned self] (Finished) -> Void in
+        }, completion: { [unowned self] (Finished) -> Void in
             self.navAnimatorDelegate?.enable()
-            context.completeTransition(!context.transitionWasCancelled())
+            context.completeTransition(!context.transitionWasCancelled)
                 
-        }
+        }) 
     }
     
 }
@@ -90,34 +90,34 @@ class PopTopAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navigatio
     
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
         
-        let b = context.containerView()!.bounds
+        let b = context.containerView.bounds
         let screenWidth                     = b.size.width
         let screenHeight                    = b.size.height
         
-        firstVCView.frame                   = b
-        secondVCView.frame                  = CGRectMake(0, screenHeight, screenWidth, screenHeight)
+        firstVCView?.frame                   = b
+        secondVCView?.frame                  = CGRect(x: 0, y: screenHeight, width: screenWidth, height: screenHeight)
         
-        context.containerView()!.addSubview(secondVCView)
-        context.containerView()!.insertSubview(firstVCView, aboveSubview:secondVCView)
+        context.containerView.addSubview(secondVCView!)
+        context.containerView.insertSubview(firstVCView!, aboveSubview:secondVCView!)
         
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            secondVCView.frame              = b
-            firstVCView.frame               = CGRectMake(0, -screenHeight, screenWidth, screenHeight)
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            secondVCView?.frame              = b
+            firstVCView?.frame               = CGRect(x: 0, y: -screenHeight, width: screenWidth, height: screenHeight)
             
-        }) { [unowned self] (Finished) -> Void in
+        }, completion: { [unowned self] (Finished) -> Void in
             self.navAnimatorDelegate?.enable()
-                context.completeTransition(!context.transitionWasCancelled())
-        }
+                context.completeTransition(!context.transitionWasCancelled)
+        }) 
     }
     
 }
@@ -126,34 +126,34 @@ class PushBottomAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navig
     
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
         
-        let b = UIScreen.mainScreen().bounds
+        let b = UIScreen.main.bounds
         let screenWidth                     = b.size.width
         let screenHeight                    = b.size.height
         
-        secondVCView.frame                  = CGRectMake(0, -screenHeight, screenWidth, screenHeight)
-        firstVCView.frame                   = b
+        secondVCView?.frame                  = CGRect(x: 0, y: -screenHeight, width: screenWidth, height: screenHeight)
+        firstVCView?.frame                   = b
         
-        context.containerView()!.addSubview(firstVCView)
-        context.containerView()!.insertSubview(secondVCView, aboveSubview:firstVCView)
+        context.containerView.addSubview(firstVCView!)
+        context.containerView.insertSubview(secondVCView!, aboveSubview:firstVCView!)
         
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            secondVCView.frame              = b
-            firstVCView.frame               = CGRectMake(0, screenHeight, screenWidth, screenHeight)
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            secondVCView?.frame              = b
+            firstVCView?.frame               = CGRect(x: 0, y: screenHeight, width: screenWidth, height: screenHeight)
             
-        }) { [unowned self] (Finished) -> Void in
+        }, completion: { [unowned self] (Finished) -> Void in
             self.navAnimatorDelegate?.enable()
-                context.completeTransition(!context.transitionWasCancelled())
-        }
+                context.completeTransition(!context.transitionWasCancelled)
+        }) 
     }
     
 }
@@ -162,30 +162,30 @@ class PopFadeAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navigati
     
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.7
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
-        let b                               = context.containerView()!.bounds
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
+        let b                               = context.containerView.bounds
         
-        firstVCView.frame                   = b
-        secondVCView.frame                  = b
-        firstVCView.alpha                   = 1
-        context.containerView()!.addSubview(secondVCView)
-        context.containerView()!.insertSubview(firstVCView, aboveSubview:secondVCView)
+        firstVCView?.frame                   = b
+        secondVCView?.frame                  = b
+        firstVCView?.alpha                   = 1
+        context.containerView.addSubview(secondVCView!)
+        context.containerView.insertSubview(firstVCView!, aboveSubview:secondVCView!)
         
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            firstVCView.alpha               = 0
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            firstVCView?.alpha               = 0
             
-        }) { [unowned self] (Finished) -> Void in
+        }, completion: { [unowned self] (Finished) -> Void in
             self.navAnimatorDelegate?.enable()
-            context.completeTransition(!context.transitionWasCancelled())
-        }
+            context.completeTransition(!context.transitionWasCancelled)
+        }) 
     }
     
 }
@@ -194,31 +194,31 @@ class PushFadeAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navigat
     
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.7
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
-        let b                               = context.containerView()!.bounds
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
+        let b                               = context.containerView.bounds
  
-        firstVCView.frame                   = b
-        secondVCView.frame                  = b
-        secondVCView.alpha                  = 0
-        context.containerView()!.addSubview(firstVCView)
-        context.containerView()!.insertSubview(secondVCView, aboveSubview:firstVCView)
+        firstVCView?.frame                   = b
+        secondVCView?.frame                  = b
+        secondVCView?.alpha                  = 0
+        context.containerView.addSubview(firstVCView!)
+        context.containerView.insertSubview(secondVCView!, aboveSubview:firstVCView!)
         
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            secondVCView.alpha              = 1
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            secondVCView?.alpha              = 1
             
-        }) { [unowned self] (Finished) -> Void in
+        }, completion: { [unowned self] (Finished) -> Void in
             self.navAnimatorDelegate?.enable()
             
-            context.completeTransition(!context.transitionWasCancelled())
-        }
+            context.completeTransition(!context.transitionWasCancelled)
+        }) 
     }
     
 }
@@ -227,40 +227,40 @@ class PopShrinkAnimator: NSObject, UIViewControllerAnimatedTransitioning, Naviga
     
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.7
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
         
-        let b                               = UIScreen.mainScreen().bounds
+        let b                               = UIScreen.main.bounds
         
-        firstVCView.frame                   = b
-        secondVCView.frame                  = b
-        secondVCView.transform              = CGAffineTransformMakeScale(0.01, 0.01)
-        firstVCView.transform               = CGAffineTransformMakeScale(1, 1)
-        firstVCView.alpha                   = 1
-        secondVCView.alpha                  = 0
+        firstVCView?.frame                   = b
+        secondVCView?.frame                  = b
+        secondVCView?.transform              = CGAffineTransform(scaleX: 0.01, y: 0.01)
+        firstVCView?.transform               = CGAffineTransform(scaleX: 1, y: 1)
+        firstVCView?.alpha                   = 1
+        secondVCView?.alpha                  = 0
  
-        context.containerView()!.addSubview(firstVCView)
-        context.containerView()!.insertSubview(secondVCView, aboveSubview:firstVCView)
+        context.containerView.addSubview(firstVCView!)
+        context.containerView.insertSubview(secondVCView!, aboveSubview:firstVCView!)
         
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            secondVCView.transform          = CGAffineTransformMakeScale(1, 1)
-            secondVCView.alpha              = 1
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            secondVCView?.transform          = CGAffineTransform(scaleX: 1, y: 1)
+            secondVCView?.alpha              = 1
  
-        }) { [unowned self] (Finished) -> Void in
+        }, completion: { [unowned self] (Finished) -> Void in
             self.navAnimatorDelegate?.enable()
-            firstVCView.transform           = CGAffineTransformMakeScale(1, 1)
-            secondVCView.transform          = CGAffineTransformMakeScale(1, 1)
-            firstVCView.alpha               = 1
-            secondVCView.alpha              = 1
-            context.completeTransition(!context.transitionWasCancelled())
-        }
+            firstVCView?.transform           = CGAffineTransform(scaleX: 1, y: 1)
+            secondVCView?.transform          = CGAffineTransform(scaleX: 1, y: 1)
+            firstVCView?.alpha               = 1
+            secondVCView?.alpha              = 1
+            context.completeTransition(!context.transitionWasCancelled)
+        }) 
     }
     
 }
@@ -269,36 +269,36 @@ class PushShrinkAnimator: NSObject, UIViewControllerAnimatedTransitioning, Navig
     
     var navAnimatorDelegate:NavigationAnimatable?
     
-    func transitionDuration(context: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using context: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
     
-    func animateTransition(context: UIViewControllerContextTransitioning) {
-        let fVC                             = context.viewControllerForKey(UITransitionContextFromViewControllerKey)!
+    func animateTransition(using context: UIViewControllerContextTransitioning) {
+        let fVC                             = context.viewController(forKey: UITransitionContextViewControllerKey.from)!
         let firstVCView                     = fVC.view
-        let secondVCView                    = context.viewControllerForKey(UITransitionContextToViewControllerKey)!.view
+        let secondVCView                    = context.viewController(forKey: UITransitionContextViewControllerKey.to)!.view
         
-        let b                               = UIScreen.mainScreen().bounds
+        let b                               = UIScreen.main.bounds
 
-        secondVCView.frame                  = b
-        firstVCView.frame                   = b
+        secondVCView?.frame                  = b
+        firstVCView?.frame                   = b
         
-        context.containerView()!.addSubview(secondVCView)
-        context.containerView()!.insertSubview(firstVCView, aboveSubview:secondVCView)
+        context.containerView.addSubview(secondVCView!)
+        context.containerView.insertSubview(firstVCView!, aboveSubview:secondVCView!)
  
         navAnimatorDelegate?.disable()
-        UIView.animateWithDuration(self.transitionDuration(context), animations: { () -> Void in
-            firstVCView.transform           = CGAffineTransformMakeScale(0.001, 0.001)
-            firstVCView.alpha               = 0
+        UIView.animate(withDuration: self.transitionDuration(using: context), animations: { () -> Void in
+            firstVCView?.transform           = CGAffineTransform(scaleX: 0.001, y: 0.001)
+            firstVCView?.alpha               = 0
             
-        }) { [unowned self] (Finished) -> Void in
-            firstVCView.transform           = CGAffineTransformMakeScale(1, 1)
-            secondVCView.transform          = CGAffineTransformMakeScale(1, 1)
-            firstVCView.alpha               = 1
-            secondVCView.alpha              = 1
+        }, completion: { [unowned self] (Finished) -> Void in
+            firstVCView?.transform           = CGAffineTransform(scaleX: 1, y: 1)
+            secondVCView?.transform          = CGAffineTransform(scaleX: 1, y: 1)
+            firstVCView?.alpha               = 1
+            secondVCView?.alpha              = 1
             self.navAnimatorDelegate?.enable()
-            context.completeTransition(!context.transitionWasCancelled())
-        }
+            context.completeTransition(!context.transitionWasCancelled)
+        }) 
     }
     
 }

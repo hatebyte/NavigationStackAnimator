@@ -1,8 +1,12 @@
-version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
-options: "85c9510754e39db438090fe146dc8442"
-build_time: [505589335, 735237000]
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "54fd810fa3ba0e27b71e25a618faa2f7"
+build_time: [527467750, 326327000]
 inputs:
-  "/Users/scottjones/ios/examples/NavTest/NavTest/Animators.swift": [505585697, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/NavigationViewController.swift": [505587903, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/ViewController.swift": [505584937, 0]
-  "/Users/scottjones/ios/examples/NavTest/NavTest/AppDelegate.swift": [505327995, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/Animators.swift": [527467746, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/VertexAndMagnitude.swift": [527467746, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/ViewController.swift": [527467750, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift": [527467746, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationViewController.swift": [527467746, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/InteractiveGestureNavigation.swift": [527467746, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/GestureNavigatorRecognizer.swift": [527467746, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift": [527467746, 0]

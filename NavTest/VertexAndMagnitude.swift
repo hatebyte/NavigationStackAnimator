@@ -9,37 +9,37 @@
 import UIKit
 
 public enum Magnitude:CGFloat {
-    case Positive = 1
-    case Negative = -1
+    case positive = 1
+    case negative = -1
 }
 
 public enum Vertice {
-    case X
-    case Y
+    case x
+    case y
 }
 extension Vertice {
     public var opposite:Vertice {
         switch self {
-        case .X:
-            return .Y
-        case .Y:
-            return .X
+        case .x:
+            return .y
+        case .y:
+            return .x
         }
     }
-    public func pointValue(point:CGPoint)->CGFloat {
+    public func pointValue(_ point:CGPoint)->CGFloat {
         switch self {
-        case .X:
+        case .x:
             return point.x
-        case .Y:
+        case .y:
             return point.y
         }
     }
-    public func percent(point:CGPoint, view:UIView)->CGFloat {
+    public func percent(_ point:CGPoint, view:UIView)->CGFloat {
         switch self {
-        case .X:
-            return point.x / CGRectGetWidth(view.bounds)
-        case .Y:
-            return point.y / CGRectGetHeight(view.bounds)
+        case .x:
+            return point.x / view.bounds.width
+        case .y:
+            return point.y / view.bounds.height
         }
     }
 }
@@ -51,27 +51,27 @@ public struct SwipeDirection {
 
 extension SwipeDirection {
     
-    public func wrongDirection(point:CGPoint)->Bool {
+    public func wrongDirection(_ point:CGPoint)->Bool {
         return abs(vertex.opposite.pointValue(point)) > abs(vertex.pointValue(point))
     }
     
-    public func pushPlaneBroken(point:CGPoint)->Bool {
+    public func pushPlaneBroken(_ point:CGPoint)->Bool {
         return vertex.pointValue(point) * magnitude.rawValue > 0
     }
     
-    public func popPlaneBroken(point:CGPoint)->Bool {
+    public func popPlaneBroken(_ point:CGPoint)->Bool {
         return !pushPlaneBroken(point)
     }
     
-    public func percent(translation:CGPoint, view:UIView)->CGFloat {
+    public func percent(_ translation:CGPoint, view:UIView)->CGFloat {
         return vertex.percent(translation, view: view)
     }
     
-    public func pushPercentPlaneBroken(percent:CGFloat)->Bool {
+    public func pushPercentPlaneBroken(_ percent:CGFloat)->Bool {
         return percent * magnitude.rawValue > 0
     }
     
-    public func popPercentPlaneBroken(percent:CGFloat)->Bool {
+    public func popPercentPlaneBroken(_ percent:CGFloat)->Bool {
         return !pushPercentPlaneBroken(percent)
     }
     

@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "7d03e8499a5ad418d71879d02ba637ad"
+build_time: [527467731, 416138000]
+inputs:
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/Animators.swift": [522290141, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/VertexAndMagnitude.swift": [518186689, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/ViewController.swift": [527466018, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/AppDelegate.swift": [507325054, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationViewController.swift": [521765143, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/InteractiveGestureNavigation.swift": [518651466, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/GestureNavigatorRecognizer.swift": [518651565, 0]
+  "/Volumes/oxcart/ios/NavigationStackAnimator/NavTest/NavigationStackAnimator.swift": [517445564, 0]

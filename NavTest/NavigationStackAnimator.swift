@@ -23,14 +23,14 @@ final class NavigationStackAnimator:NSObject {
 }
 
 extension NavigationStackAnimator : NavigationAnimatable {
-    func navigationController(navigationController: UINavigationController,
-                              animationControllerForOperation operation: UINavigationControllerOperation,
-                                                              fromViewController fromVC: UIViewController,
-                                                                                 toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController,
+                              animationControllerFor operation: UINavigationControllerOperation,
+                                                              from fromVC: UIViewController,
+                                                                                 to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return self.animator(animationControllerForOperation:operation, fromViewController:fromVC, toViewController:toVC)
     }
     
-    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return self.interactionController
     }
 }
