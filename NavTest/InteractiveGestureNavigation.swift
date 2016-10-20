@@ -121,7 +121,7 @@ extension NavigationAnimatable {
 }
 
 public protocol NavGestureProtocol:class {
-    var direction:SwipeDirection { get }
+    var direction:SwipeDirectionable { get }
     var navigationAnimatable:NavigationAnimatable { get set }
     var gestureRecognizer:UIGestureRecognizer { get }
     func gestureFired(_ recognizer:UIPanGestureRecognizer)

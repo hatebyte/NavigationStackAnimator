@@ -33,33 +33,33 @@ provides-member:
 - ["P7NavTest18NavGestureProtocol", "endInteractiveTransition"]
 provides-dynamic-lookup:
 depends-top-level:
-- "CastingPrecedence"
-- "UINavigationControllerOperation"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "fabs"
-- !private "!="
-- "SwipeDirection"
-- "UIGestureRecognizer"
-- !private "print"
-- "NavGestureProtocol"
-- "CYNavigationPush"
 - "Bool"
-- "SeguePush"
-- "UIPanGestureRecognizer"
 - "UIViewControllerAnimatedTransitioning"
-- !private ">"
-- "CYNavigationPop"
-- !private "BooleanLiteralType"
-- "UIPercentDrivenInteractiveTransition"
-- "UINavigationControllerDelegate"
-- !private "!"
+- "SeguePush"
+- "CYNavigationPush"
+- "UIGestureRecognizer"
+- "NavGestureProtocol"
 - !private "NavigationAnimatorIgnorable"
-- "NavigationAnimatable"
+- !private "=="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- !private "!="
+- "UINavigationControllerOperation"
+- !private "!"
+- "SwipeDirectionable"
+- "UINavigationControllerDelegate"
 - "String"
-- "UINavigationController"
-- "UIViewController"
+- "UIPanGestureRecognizer"
 - !private "StringLiteralType"
+- "UINavigationController"
+- !private ">"
+- !private "print"
+- "NavigationAnimatable"
+- !private "fabs"
+- "UIViewController"
+- !private "BooleanLiteralType"
+- "CYNavigationPop"
+- "UIPercentDrivenInteractiveTransition"
 depends-member:
 - !private ["Ps9AnyObject", "cancel"]
 - !private ["Ps9AnyObject", "delegate"]
@@ -332,7 +332,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["P7NavTest18NavGestureProtocol", "NavigationAnimatable"]
-- ["P7NavTest18NavGestureProtocol", "SwipeDirection"]
+- ["P7NavTest18NavGestureProtocol", "SwipeDirectionable"]
 - ["P7NavTest18NavGestureProtocol", "UIGestureRecognizer"]
 - ["P7NavTest18NavGestureProtocol", "UIPanGestureRecognizer"]
 - !private ["P7NavTest18NavGestureProtocol", "UIPercentDrivenInteractiveTransition"]
@@ -402,13 +402,13 @@ depends-member:
 - !private ["Ps8Sequence", "last"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
-- ["V7NavTest14SwipeDirection", "deinit"]
-- !private ["V7NavTest14SwipeDirection", "percent"]
-- !private ["V7NavTest14SwipeDirection", "popPercentPlaneBroken"]
-- !private ["V7NavTest14SwipeDirection", "popPlaneBroken"]
-- !private ["V7NavTest14SwipeDirection", "pushPercentPlaneBroken"]
-- !private ["V7NavTest14SwipeDirection", "pushPlaneBroken"]
-- !private ["V7NavTest14SwipeDirection", "wrongDirection"]
+- ["P7NavTest18SwipeDirectionable", "deinit"]
+- !private ["P7NavTest18SwipeDirectionable", "percent"]
+- !private ["P7NavTest18SwipeDirectionable", "popPercentPlaneBroken"]
+- !private ["P7NavTest18SwipeDirectionable", "popPlaneBroken"]
+- !private ["P7NavTest18SwipeDirectionable", "pushPercentPlaneBroken"]
+- !private ["P7NavTest18SwipeDirectionable", "pushPlaneBroken"]
+- !private ["P7NavTest18SwipeDirectionable", "wrongDirection"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "isUserInteractionEnabled"]
@@ -639,7 +639,7 @@ depends-nominal:
 - !private "Ps16RawRepresentable"
 - !private "Ps8Sequence"
 - "SS"
-- "V7NavTest14SwipeDirection"
+- "P7NavTest18SwipeDirectionable"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
@@ -687,4 +687,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "b45f697439356b80c3d53e10bcc44230"
+interface-hash: "d83c466208dad38f292e70978cb5b4f0"

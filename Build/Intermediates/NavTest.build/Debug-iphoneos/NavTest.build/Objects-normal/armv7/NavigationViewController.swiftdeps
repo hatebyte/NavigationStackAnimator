@@ -10,18 +10,18 @@ provides-member:
 - ["O7NavTest13AnimationType", ""]
 - ["C7NavTest24NavigationViewController", ""]
 provides-dynamic-lookup:
-- "gestureRecognizer"
 - "viewDidLoad"
+- "gestureRecognizer"
 depends-top-level:
-- "NavigationAnimatable"
-- !private "NavigationStackAnimator"
-- "UINavigationController"
-- "GestureNavigatorRecognizer"
 - "AnimationType"
 - "NavigationViewController"
-- !private "SwipeDirection"
-- "AssignmentPrecedence"
+- "UINavigationController"
+- "NavigationAnimatable"
+- "GestureNavigatorRecognizer"
 - "=="
+- !private "NavigationStackAnimator"
+- "AssignmentPrecedence"
+- !private "SwipeDirection"
 depends-member:
 - ["O7NavTest13AnimationType", "=="]
 - ["O7NavTest13AnimationType", "_toAnyHashable"]
@@ -201,6 +201,7 @@ depends-member:
 - !private ["Ps10Strideable", "hashValue"]
 - ["V7NavTest14SwipeDirection", "deinit"]
 - !private ["V7NavTest14SwipeDirection", "init"]
+- !private ["P7NavTest18SwipeDirectionable", "init"]
 - !private ["PSo21UIAppearanceContainer", "GestureNavigatorRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "NavigationStackAnimator"]
 - !private ["PSo21UIAppearanceContainer", "SwipeDirection"]
@@ -366,6 +367,7 @@ depends-nominal:
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
 - "V7NavTest14SwipeDirection"
+- !private "P7NavTest18SwipeDirectionable"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
 - "PSo18UIFocusEnvironment"

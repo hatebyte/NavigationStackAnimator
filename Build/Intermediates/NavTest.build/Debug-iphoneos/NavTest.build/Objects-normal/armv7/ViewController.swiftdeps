@@ -15,72 +15,71 @@ provides-member:
 - ["C7NavTest21ViewControllerPushPop", ""]
 - ["C7NavTest17ViewControllerPop", ""]
 provides-dynamic-lookup:
-- "getPushAnimator"
-- "didReceiveMemoryWarning"
-- "topButton"
-- "rightHit"
-- "pop"
-- "pop"
-- "bottomButton"
-- "popButton"
-- "viewDidLoad"
-- "seguePush"
-- "seguePush"
-- "popAnimator"
-- "popAnimator"
-- "viewWillAppear"
-- "viewWillDisappear"
 - "leftButton"
-- "pushAnimator"
-- "pushAnimator"
-- "rightButton"
-- "getPopAnimator"
-- "seguePushBlock"
-- "bottomHit"
-- "addHandlers"
 - "gestureNavigationController"
-- "updateButtons"
-- "stackPush"
-- "buttonContainer"
-- "removeHandlers"
-- "push"
-- "push"
-- "pushButton"
-- "enableButtons"
-- "topHit"
 - "viewDidAppear"
+- "viewDidLoad"
 - "leftHit"
+- "removeHandlers"
+- "topHit"
+- "getPushAnimator"
+- "pushAnimator"
+- "pushAnimator"
+- "getPopAnimator"
+- "bottomButton"
+- "bottomHit"
+- "seguePush"
+- "seguePush"
+- "topButton"
+- "pop"
+- "pop"
+- "popButton"
+- "updateButtons"
+- "addHandlers"
+- "pushButton"
+- "viewWillDisappear"
+- "seguePushBlock"
+- "popAnimator"
+- "popAnimator"
+- "buttonContainer"
+- "enableButtons"
+- "didReceiveMemoryWarning"
+- "rightButton"
+- "rightHit"
+- "stackPush"
+- "push"
+- "push"
+- "viewWillAppear"
 depends-top-level:
-- "NavigationViewController"
-- !private "BooleanLiteralType"
-- "ViewControllerPushPop"
+- "ViewControllerPop"
 - "UIViewControllerAnimatedTransitioning"
-- !private "UIStoryboard"
-- "UIButton"
-- "CYNavigationPop"
-- "UIViewController"
-- "Bool"
-- !private "StringLiteralType"
-- "ViewControllerPush"
-- "String"
-- !private "UIColor"
-- !private "UIControlState"
-- !private "PushLeftAnimator"
-- "ViewController"
-- "UIView"
-- !private "PopRightAnimator"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "PopTopAnimator"
-- !private "PopShrinkAnimator"
 - "CYNavigationPush"
 - !private "PushFadeAnimator"
-- !private "PushShrinkAnimator"
-- !private "PopFadeAnimator"
-- "ViewControllerPop"
-- !private "print"
-- "SeguePush"
+- !private "BooleanLiteralType"
 - !private "PushBottomAnimator"
+- "UIView"
+- "SeguePush"
+- !private "PopFadeAnimator"
+- !private "PopRightAnimator"
+- "Bool"
+- "NavigationViewController"
+- !private "StringLiteralType"
+- "ViewController"
+- "ViewControllerPush"
+- !private "PopShrinkAnimator"
+- !private "PopTopAnimator"
+- !private "UIColor"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "UIStoryboard"
+- "ViewControllerPushPop"
+- "String"
+- !private "UIControlState"
+- !private "PushShrinkAnimator"
+- "UIButton"
+- "UIViewController"
+- "CYNavigationPop"
+- !private "PushLeftAnimator"
 depends-member:
 - ["O7NavTest13AnimationType", "deinit"]
 - ["O7NavTest13AnimationType", "fade"]
@@ -124,7 +123,6 @@ depends-member:
 - ["Ps9AnyObject", "pop"]
 - ["Ps9AnyObject", "popAnimator"]
 - ["Ps9AnyObject", "popButton"]
-- !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "push"]
 - ["Ps9AnyObject", "pushAnimator"]
 - ["Ps9AnyObject", "pushButton"]
@@ -191,7 +189,6 @@ depends-member:
 - ["Ps7CVarArg", "pop"]
 - ["Ps7CVarArg", "popAnimator"]
 - ["Ps7CVarArg", "popButton"]
-- !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "push"]
 - ["Ps7CVarArg", "pushAnimator"]
 - ["Ps7CVarArg", "pushButton"]
@@ -230,7 +227,6 @@ depends-member:
 - ["P7NavTest16CYNavigationPush", "performPop"]
 - ["P7NavTest16CYNavigationPush", "performPush"]
 - ["P7NavTest16CYNavigationPush", "popAnimator"]
-- !private ["P7NavTest16CYNavigationPush", "print"]
 - ["P7NavTest16CYNavigationPush", "pushAnimator"]
 - ["P7NavTest16CYNavigationPush", "seguePush"]
 - ["P7NavTest16CYNavigationPush", "stackPush"]
@@ -273,7 +269,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "pop"]
 - ["Ps28CustomDebugStringConvertible", "popAnimator"]
 - ["Ps28CustomDebugStringConvertible", "popButton"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "push"]
 - ["Ps28CustomDebugStringConvertible", "pushAnimator"]
 - ["Ps28CustomDebugStringConvertible", "pushButton"]
@@ -337,7 +332,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "pop"]
 - ["Ps23CustomStringConvertible", "popAnimator"]
 - ["Ps23CustomStringConvertible", "popButton"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "push"]
 - ["Ps23CustomStringConvertible", "pushAnimator"]
 - ["Ps23CustomStringConvertible", "pushButton"]
@@ -402,7 +396,6 @@ depends-member:
 - ["Ps9Equatable", "pop"]
 - ["Ps9Equatable", "popAnimator"]
 - ["Ps9Equatable", "popButton"]
-- !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "push"]
 - ["Ps9Equatable", "pushAnimator"]
 - ["Ps9Equatable", "pushButton"]
@@ -477,7 +470,6 @@ depends-member:
 - ["Ps8Hashable", "pop"]
 - ["Ps8Hashable", "popAnimator"]
 - ["Ps8Hashable", "popButton"]
-- !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "push"]
 - ["Ps8Hashable", "pushAnimator"]
 - ["Ps8Hashable", "pushButton"]
@@ -541,7 +533,6 @@ depends-member:
 - ["PSo8NSCoding", "pop"]
 - ["PSo8NSCoding", "popAnimator"]
 - ["PSo8NSCoding", "popButton"]
-- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "push"]
 - ["PSo8NSCoding", "pushAnimator"]
 - ["PSo8NSCoding", "pushButton"]
@@ -599,7 +590,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "pop"]
 - ["PSo26NSExtensionRequestHandling", "popAnimator"]
 - ["PSo26NSExtensionRequestHandling", "popButton"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "push"]
 - ["PSo26NSExtensionRequestHandling", "pushAnimator"]
 - ["PSo26NSExtensionRequestHandling", "pushButton"]
@@ -663,7 +653,6 @@ depends-member:
 - ["CSo8NSObject", "pop"]
 - ["CSo8NSObject", "popAnimator"]
 - ["CSo8NSObject", "popButton"]
-- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "push"]
 - ["CSo8NSObject", "pushAnimator"]
 - ["CSo8NSObject", "pushButton"]
@@ -722,7 +711,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "pop"]
 - ["PSo16NSObjectProtocol", "popAnimator"]
 - ["PSo16NSObjectProtocol", "popButton"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "push"]
 - ["PSo16NSObjectProtocol", "pushAnimator"]
 - ["PSo16NSObjectProtocol", "pushButton"]
@@ -838,7 +826,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pop"]
 - ["PSo21UIAppearanceContainer", "popAnimator"]
 - ["PSo21UIAppearanceContainer", "popButton"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "push"]
 - ["PSo21UIAppearanceContainer", "pushAnimator"]
 - ["PSo21UIAppearanceContainer", "pushButton"]
@@ -900,7 +887,6 @@ depends-member:
 - ["PSo18UIContentContainer", "pop"]
 - ["PSo18UIContentContainer", "popAnimator"]
 - ["PSo18UIContentContainer", "popButton"]
-- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "push"]
 - ["PSo18UIContentContainer", "pushAnimator"]
 - ["PSo18UIContentContainer", "pushButton"]
@@ -977,7 +963,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pop"]
 - ["PSo18UIFocusEnvironment", "popAnimator"]
 - ["PSo18UIFocusEnvironment", "popButton"]
-- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "push"]
 - ["PSo18UIFocusEnvironment", "pushAnimator"]
 - ["PSo18UIFocusEnvironment", "pushButton"]
@@ -1050,7 +1035,6 @@ depends-member:
 - ["CSo11UIResponder", "pop"]
 - ["CSo11UIResponder", "popAnimator"]
 - ["CSo11UIResponder", "popButton"]
-- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "push"]
 - ["CSo11UIResponder", "pushAnimator"]
 - ["CSo11UIResponder", "pushButton"]
@@ -1105,7 +1089,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "pop"]
 - ["PSo30UIResponderStandardEditActions", "popAnimator"]
 - ["PSo30UIResponderStandardEditActions", "popButton"]
-- !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "push"]
 - ["PSo30UIResponderStandardEditActions", "pushAnimator"]
 - ["PSo30UIResponderStandardEditActions", "pushButton"]
@@ -1158,7 +1141,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "pop"]
 - ["PSo16UIStateRestoring", "popAnimator"]
 - ["PSo16UIStateRestoring", "popButton"]
-- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "push"]
 - ["PSo16UIStateRestoring", "pushAnimator"]
 - ["PSo16UIStateRestoring", "pushButton"]
@@ -1214,7 +1196,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pop"]
 - ["PSo18UITraitEnvironment", "popAnimator"]
 - ["PSo18UITraitEnvironment", "popButton"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "push"]
 - ["PSo18UITraitEnvironment", "pushAnimator"]
 - ["PSo18UITraitEnvironment", "pushButton"]
@@ -1281,7 +1262,6 @@ depends-member:
 - ["CSo16UIViewController", "pop"]
 - ["CSo16UIViewController", "popAnimator"]
 - ["CSo16UIViewController", "popButton"]
-- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "push"]
 - ["CSo16UIViewController", "pushAnimator"]
 - ["CSo16UIViewController", "pushButton"]
@@ -1338,7 +1318,6 @@ depends-member:
 - ["C7NavTest14ViewController", "pop"]
 - ["C7NavTest14ViewController", "popAnimator"]
 - ["C7NavTest14ViewController", "popButton"]
-- !private ["C7NavTest14ViewController", "print"]
 - ["C7NavTest14ViewController", "push"]
 - ["C7NavTest14ViewController", "pushAnimator"]
 - ["C7NavTest14ViewController", "pushButton"]
@@ -1372,7 +1351,6 @@ depends-member:
 - ["C7NavTest18ViewControllerPush", "init"]
 - !private ["C7NavTest18ViewControllerPush", "navigationController"]
 - ["C7NavTest18ViewControllerPush", "performPush"]
-- !private ["C7NavTest18ViewControllerPush", "print"]
 - ["C7NavTest18ViewControllerPush", "push"]
 - ["C7NavTest18ViewControllerPush", "pushAnimator"]
 - ["C7NavTest18ViewControllerPush", "seguePush"]
@@ -1445,7 +1423,6 @@ depends-member:
 - ["Ps9_Hashable", "pop"]
 - ["Ps9_Hashable", "popAnimator"]
 - ["Ps9_Hashable", "popButton"]
-- !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "push"]
 - ["Ps9_Hashable", "pushAnimator"]
 - ["Ps9_Hashable", "pushButton"]

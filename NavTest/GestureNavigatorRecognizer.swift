@@ -25,9 +25,9 @@ public final class GestureNavigatorRecognizer:UIPanGestureRecognizer {
     
     public var navigationAnimatable:NavigationAnimatable
     public var gestureRecognizer:UIGestureRecognizer { return self }
-    public var direction:SwipeDirection
+    public var direction:SwipeDirectionable
     
-    public init(navigationAnimatable:NavigationAnimatable, direction:SwipeDirection) {
+    public init(navigationAnimatable:NavigationAnimatable, direction:SwipeDirectionable) {
         self.navigationAnimatable           = navigationAnimatable
         self.direction                      = direction
         super.init(target:nil, action:nil)

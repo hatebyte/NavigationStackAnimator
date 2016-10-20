@@ -162,7 +162,6 @@ extension ViewControllerPush : CYNavigationPush {
     }
     func stackPush()->SeguePush? {
         return {
-            print("WHOOOT!!!! PUSH MAN")
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewControllerPushPop")
             self.navigationController?.pushViewController(vc, animated: true)
         }

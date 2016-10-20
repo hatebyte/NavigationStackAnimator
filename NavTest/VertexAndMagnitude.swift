@@ -44,12 +44,21 @@ extension Vertice {
     }
 }
 
+public protocol SwipeDirectionable {
+    func wrongDirection(_ point:CGPoint)->Bool
+    func pushPlaneBroken(_ point:CGPoint)->Bool
+    func popPlaneBroken(_ point:CGPoint)->Bool
+    func percent(_ translation:CGPoint, view:UIView)->CGFloat
+    func pushPercentPlaneBroken(_ percent:CGFloat)->Bool
+    func popPercentPlaneBroken(_ percent:CGFloat)->Bool
+}
+
 public struct SwipeDirection {
     public var vertex:Vertice
     public var magnitude:Magnitude
 }
 
-extension SwipeDirection {
+extension SwipeDirection : SwipeDirectionable {
     
     public func wrongDirection(_ point:CGPoint)->Bool {
         return abs(vertex.opposite.pointValue(point)) > abs(vertex.pointValue(point))

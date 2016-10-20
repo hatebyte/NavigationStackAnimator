@@ -6,23 +6,24 @@ provides-nominal:
 provides-member:
 - ["C7NavTest26GestureNavigatorRecognizer", ""]
 provides-dynamic-lookup:
+- "acceptGestures"
 - "denyGestures"
 - "gestureFired"
-- "acceptGestures"
 - "gestureRecognizer"
 - "gestureRecognizer"
 depends-top-level:
-- "SwipeDirection"
-- "UIGestureRecognizer"
-- "UIPanGestureRecognizer"
+- !private "SwipeDirection"
 - "AssignmentPrecedence"
-- "NavigationAnimatable"
+- "SwipeDirectionable"
 - "Bool"
-- "UIGestureRecognizerDelegate"
-- !private "StringLiteralType"
-- "NavGestureProtocol"
-- "GestureNavigatorRecognizer"
+- "NavigationAnimatable"
 - !private "BooleanLiteralType"
+- "NavGestureProtocol"
+- "UIGestureRecognizerDelegate"
+- "UIGestureRecognizer"
+- !private "StringLiteralType"
+- "GestureNavigatorRecognizer"
+- "UIPanGestureRecognizer"
 depends-member:
 - !private ["Ps9AnyObject", "GestureNavigatorRecognizer"]
 - !private ["Ps9AnyObject", "SwipeDirection"]
@@ -164,7 +165,8 @@ depends-member:
 - ["C7NavTest26GestureNavigatorRecognizer", "Bool"]
 - ["C7NavTest26GestureNavigatorRecognizer", "GestureNavigatorRecognizer"]
 - ["C7NavTest26GestureNavigatorRecognizer", "NavigationAnimatable"]
-- ["C7NavTest26GestureNavigatorRecognizer", "SwipeDirection"]
+- !private ["C7NavTest26GestureNavigatorRecognizer", "SwipeDirection"]
+- ["C7NavTest26GestureNavigatorRecognizer", "SwipeDirectionable"]
 - ["C7NavTest26GestureNavigatorRecognizer", "SwipeDownNavigatorRecognizer"]
 - ["C7NavTest26GestureNavigatorRecognizer", "SwipeLeftNavigatorRecognizer"]
 - ["C7NavTest26GestureNavigatorRecognizer", "SwipeRightNavigatorRecognizer"]
@@ -226,7 +228,8 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "GestureNavigatorRecognizer"]
 - ["CSo8NSObject", "NavigationAnimatable"]
-- ["CSo8NSObject", "SwipeDirection"]
+- !private ["CSo8NSObject", "SwipeDirection"]
+- ["CSo8NSObject", "SwipeDirectionable"]
 - ["CSo8NSObject", "SwipeDownNavigatorRecognizer"]
 - ["CSo8NSObject", "SwipeLeftNavigatorRecognizer"]
 - ["CSo8NSObject", "SwipeRightNavigatorRecognizer"]
@@ -308,6 +311,8 @@ depends-member:
 - !private ["Vs12StaticString", "init"]
 - ["V7NavTest14SwipeDirection", "deinit"]
 - !private ["V7NavTest14SwipeDirection", "init"]
+- ["P7NavTest18SwipeDirectionable", "deinit"]
+- !private ["P7NavTest18SwipeDirectionable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
@@ -321,7 +326,8 @@ depends-member:
 - ["CSo19UIGestureRecognizer", "Bool"]
 - ["CSo19UIGestureRecognizer", "GestureNavigatorRecognizer"]
 - ["CSo19UIGestureRecognizer", "NavigationAnimatable"]
-- ["CSo19UIGestureRecognizer", "SwipeDirection"]
+- !private ["CSo19UIGestureRecognizer", "SwipeDirection"]
+- ["CSo19UIGestureRecognizer", "SwipeDirectionable"]
 - ["CSo19UIGestureRecognizer", "SwipeDownNavigatorRecognizer"]
 - ["CSo19UIGestureRecognizer", "SwipeLeftNavigatorRecognizer"]
 - ["CSo19UIGestureRecognizer", "SwipeRightNavigatorRecognizer"]
@@ -368,7 +374,8 @@ depends-member:
 - ["CSo22UIPanGestureRecognizer", "Bool"]
 - ["CSo22UIPanGestureRecognizer", "GestureNavigatorRecognizer"]
 - ["CSo22UIPanGestureRecognizer", "NavigationAnimatable"]
-- ["CSo22UIPanGestureRecognizer", "SwipeDirection"]
+- !private ["CSo22UIPanGestureRecognizer", "SwipeDirection"]
+- ["CSo22UIPanGestureRecognizer", "SwipeDirectionable"]
 - ["CSo22UIPanGestureRecognizer", "SwipeDownNavigatorRecognizer"]
 - ["CSo22UIPanGestureRecognizer", "SwipeLeftNavigatorRecognizer"]
 - ["CSo22UIPanGestureRecognizer", "SwipeRightNavigatorRecognizer"]
@@ -467,6 +474,7 @@ depends-nominal:
 - "V10ObjectiveC8Selector"
 - "Vs12StaticString"
 - "V7NavTest14SwipeDirection"
+- "P7NavTest18SwipeDirectionable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - !private "PSo21UIAppearanceContainer"
@@ -505,4 +513,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "cd6b676ffe661a6415ce33d152b1ab4c"
+interface-hash: "16a93580962c9fd5509483b704d6b4cd"
