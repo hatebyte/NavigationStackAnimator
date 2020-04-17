@@ -25,15 +25,15 @@ class ViewController: UIViewController {
         leftButton?.setTitleColor(UIColor.white, for: .disabled)
         rightButton?.setTitleColor(UIColor.white, for: .disabled)
        
-        topButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
-        bottomButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
-        leftButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
-        rightButton?.setTitleColor(UIColor.darkGray, for: UIControlState())
+        topButton?.setTitleColor(UIColor.darkGray, for: UIControl.State())
+        bottomButton?.setTitleColor(UIColor.darkGray, for: UIControl.State())
+        leftButton?.setTitleColor(UIColor.darkGray, for: UIControl.State())
+        rightButton?.setTitleColor(UIColor.darkGray, for: UIControl.State())
         
-        topButton?.setTitle("Vertical", for: UIControlState())
-        bottomButton?.setTitle("Horizontal", for: UIControlState())
-        leftButton?.setTitle("Fade", for: UIControlState())
-        rightButton?.setTitle("Shrink", for: UIControlState())
+        topButton?.setTitle("Vertical", for: UIControl.State())
+        bottomButton?.setTitle("Horizontal", for: UIControl.State())
+        leftButton?.setTitle("Fade", for: UIControl.State())
+        rightButton?.setTitle("Shrink", for: UIControl.State())
         buttonContainer?.backgroundColor = UIColor.gray
     }
  
@@ -74,22 +74,22 @@ class ViewController: UIViewController {
         return self.navigationController as? NavigationViewController
     }
   
-    func topHit() {
+    @objc func topHit() {
         gestureNavigationController?.changeGestureForType(.vertical)
         updateButtons()
     }
     
-    func bottomHit() {
+    @objc func bottomHit() {
         gestureNavigationController?.changeGestureForType(.horizontal)
         updateButtons()
     }
     
-    func rightHit() {
+    @objc func rightHit() {
         gestureNavigationController?.changeGestureForType(.shrink)
         updateButtons()
     }
     
-    func leftHit() {
+    @objc func leftHit() {
         gestureNavigationController?.changeGestureForType(.fade)
         updateButtons()
     }

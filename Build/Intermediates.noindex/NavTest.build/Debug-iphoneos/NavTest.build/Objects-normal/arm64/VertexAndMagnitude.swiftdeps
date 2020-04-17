@@ -1,0 +1,270 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Magnitude"
+- "Vertice"
+- "SwipeDirectionable"
+- "SwipeDirection"
+provides-nominal:
+- "7NavTest9MagnitudeO"
+- "7NavTest7VerticeO"
+- "7NavTest18SwipeDirectionableP"
+- "7NavTest14SwipeDirectionV"
+provides-member:
+- ["7NavTest9MagnitudeO", ""]
+- ["7NavTest7VerticeO", ""]
+- ["7NavTest18SwipeDirectionableP", ""]
+- ["7NavTest14SwipeDirectionV", ""]
+- ["7NavTest7VerticeO", "opposite"]
+- ["7NavTest7VerticeO", "pointValue"]
+- ["7NavTest7VerticeO", "percent"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "*"
+- !private "/"
+- "=="
+- !private ">"
+- "Bool"
+- "CGFloat"
+- "CGPoint"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "Magnitude"
+- "SwipeDirection"
+- "SwipeDirectionable"
+- "UIView"
+- "Vertice"
+- !private "abs"
+- !private "~="
+depends-member:
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["SC7CGPointV", "x"]
+- !private ["SC7CGPointV", "y"]
+- !private ["SC6CGRectV", "height"]
+- !private ["SC6CGRectV", "width"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s10ComparableP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s28CustomDebugStringConvertibleP", "y"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "x"]
+- !private ["s29CustomPlaygroundQuickLookableP", "y"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s17CustomReflectableP", "y"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "hashValue"]
+- !private ["s9DecodableP", "height"]
+- !private ["s9DecodableP", "width"]
+- !private ["s9DecodableP", "x"]
+- !private ["s9DecodableP", "y"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "hashValue"]
+- !private ["s9EncodableP", "height"]
+- !private ["s9EncodableP", "width"]
+- !private ["s9EncodableP", "x"]
+- !private ["s9EncodableP", "y"]
+- ["s9EquatableP", "RawValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "bounds"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "height"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "opposite"]
+- !private ["s9EquatableP", "percent"]
+- !private ["s9EquatableP", "pointValue"]
+- ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "width"]
+- ["s9EquatableP", "x"]
+- ["s9EquatableP", "y"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- ["s8HashableP", "RawValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "bounds"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "opposite"]
+- !private ["s8HashableP", "percent"]
+- !private ["s8HashableP", "pointValue"]
+- ["s8HashableP", "rawValue"]
+- ["s8HashableP", "x"]
+- ["s8HashableP", "y"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- ["7NavTest9MagnitudeO", "RawValue"]
+- ["7NavTest9MagnitudeO", "deinit"]
+- ["7NavTest9MagnitudeO", "hashValue"]
+- ["7NavTest9MagnitudeO", "init"]
+- ["7NavTest9MagnitudeO", "negative"]
+- ["7NavTest9MagnitudeO", "positive"]
+- ["7NavTest9MagnitudeO", "rawValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["s7NumericP", "hashValue"]
+- ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", "hashValue"]
+- ["s16RawRepresentableP", "init"]
+- ["s16RawRepresentableP", "rawValue"]
+- ["s16RawRepresentableP", ""]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s10StrideableP", "hashValue"]
+- ["7NavTest14SwipeDirectionV", "Bool"]
+- ["7NavTest14SwipeDirectionV", "CGFloat"]
+- ["7NavTest14SwipeDirectionV", "CGPoint"]
+- ["7NavTest14SwipeDirectionV", "Magnitude"]
+- ["7NavTest14SwipeDirectionV", "UIView"]
+- ["7NavTest14SwipeDirectionV", "Vertice"]
+- !private ["7NavTest14SwipeDirectionV", "abs"]
+- ["7NavTest14SwipeDirectionV", "deinit"]
+- ["7NavTest14SwipeDirectionV", "init"]
+- ["7NavTest14SwipeDirectionV", "magnitude"]
+- ["7NavTest14SwipeDirectionV", "percent"]
+- ["7NavTest14SwipeDirectionV", "popPercentPlaneBroken"]
+- ["7NavTest14SwipeDirectionV", "popPlaneBroken"]
+- ["7NavTest14SwipeDirectionV", "pushPercentPlaneBroken"]
+- ["7NavTest14SwipeDirectionV", "pushPlaneBroken"]
+- ["7NavTest14SwipeDirectionV", "vertex"]
+- ["7NavTest14SwipeDirectionV", "wrongDirection"]
+- ["7NavTest18SwipeDirectionableP", "Bool"]
+- ["7NavTest18SwipeDirectionableP", "CGFloat"]
+- ["7NavTest18SwipeDirectionableP", "CGPoint"]
+- ["7NavTest18SwipeDirectionableP", "UIView"]
+- !private ["7NavTest18SwipeDirectionableP", "abs"]
+- !private ["7NavTest18SwipeDirectionableP", "magnitude"]
+- ["7NavTest18SwipeDirectionableP", "percent"]
+- ["7NavTest18SwipeDirectionableP", "popPercentPlaneBroken"]
+- ["7NavTest18SwipeDirectionableP", "popPlaneBroken"]
+- ["7NavTest18SwipeDirectionableP", "pushPercentPlaneBroken"]
+- ["7NavTest18SwipeDirectionableP", "pushPlaneBroken"]
+- !private ["7NavTest18SwipeDirectionableP", "vertex"]
+- ["7NavTest18SwipeDirectionableP", "wrongDirection"]
+- ["7NavTest18SwipeDirectionableP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So11UIResponderC", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So6UIViewC", "bounds"]
+- ["7NavTest7VerticeO", "CGFloat"]
+- ["7NavTest7VerticeO", "CGPoint"]
+- ["7NavTest7VerticeO", "UIView"]
+- ["7NavTest7VerticeO", "Vertice"]
+- ["7NavTest7VerticeO", "__derived_enum_equals"]
+- ["7NavTest7VerticeO", "deinit"]
+- ["7NavTest7VerticeO", "hashValue"]
+- ["7NavTest7VerticeO", "opposite"]
+- ["7NavTest7VerticeO", "percent"]
+- ["7NavTest7VerticeO", "pointValue"]
+- ["7NavTest7VerticeO", "x"]
+- ["7NavTest7VerticeO", "y"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
+- !private ["s11_StrideableP", "hashValue"]
+depends-nominal:
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "SC7CGPointV"
+- !private "SC6CGRectV"
+- !private "s7CVarArgP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- "7NavTest9MagnitudeO"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "s7NumericP"
+- "s16RawRepresentableP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- "7NavTest14SwipeDirectionV"
+- "7NavTest18SwipeDirectionableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "7NavTest7VerticeO"
+- !private "s18_BitwiseOperationsP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "16ef436361fd16f13871110a5c4d1819"

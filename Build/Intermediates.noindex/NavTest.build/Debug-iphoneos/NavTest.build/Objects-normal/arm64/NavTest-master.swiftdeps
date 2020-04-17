@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "05cedd205d1e6edcf88b360dc10b9996"
+build_time: [1518622760, 255506000]
+inputs:
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/Animators.swift": [1518622722, 0]
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/VertexAndMagnitude.swift": [1518622722, 0]
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/ViewController.swift": [1518622722, 0]
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/AppDelegate.swift": [1518622722, 0]
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/NavigationViewController.swift": [1518622722, 0]
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/InteractiveGestureNavigation.swift": [1518622722, 0]
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/GestureNavigatorRecognizer.swift": [1518622722, 0]
+  "/Users/scottjones/stash/navigationstackgestureanimator/NavTest/NavigationStackAnimator.swift": [1518622722, 0]

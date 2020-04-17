@@ -52,7 +52,7 @@ public final class GestureNavigatorRecognizer:UIPanGestureRecognizer {
 
 extension GestureNavigatorRecognizer : NavGestureProtocol {
     
-    public func gestureFired(_ recognizer:UIPanGestureRecognizer) {
+    @objc public func gestureFired(_ recognizer:UIPanGestureRecognizer) {
         self.handleFiredGesture(recognizer)
     }
     

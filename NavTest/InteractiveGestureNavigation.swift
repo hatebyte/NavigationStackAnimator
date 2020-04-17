@@ -48,7 +48,7 @@ public protocol NavigationAnimatable:class, UINavigationControllerDelegate {
     var navigationController:UINavigationController { get set }
     var interactionController:UIPercentDrivenInteractiveTransition? { get set }
     var isPopping :Bool { get set }
-    func animator(animationControllerForOperation operation: UINavigationControllerOperation,fromViewController fromVC: UIViewController,toViewController toVC: UIViewController)->UIViewControllerAnimatedTransitioning?
+    func animator(animationControllerForOperation operation: UINavigationController.Operation,fromViewController fromVC: UIViewController,toViewController toVC: UIViewController)->UIViewControllerAnimatedTransitioning?
 }
 
 extension NavigationAnimatable {
@@ -67,7 +67,7 @@ extension NavigationAnimatable {
     }
     
     //MARK: Connect Animators
-    public func animator(animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController)->UIViewControllerAnimatedTransitioning? {
+    public func animator(animationControllerForOperation operation: UINavigationController.Operation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController)->UIViewControllerAnimatedTransitioning? {
         if operation == .pop {
             return animatorForPop(fromVC)
         } else {

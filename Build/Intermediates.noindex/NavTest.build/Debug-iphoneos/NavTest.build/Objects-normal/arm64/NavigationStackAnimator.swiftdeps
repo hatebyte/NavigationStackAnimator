@@ -1,0 +1,179 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NavigationStackAnimator"
+provides-nominal:
+- "7NavTest23NavigationStackAnimatorC"
+provides-member:
+- ["7NavTest23NavigationStackAnimatorC", ""]
+provides-dynamic-lookup:
+- "interactionController"
+- "isPopping"
+- "navigationController"
+depends-top-level:
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
+- "NSObject"
+- "NavigationAnimatable"
+- "NavigationStackAnimator"
+- !private "StringLiteralType"
+- "UINavigationController"
+- "UINavigationControllerOperation"
+- "UIPercentDrivenInteractiveTransition"
+- "UIViewController"
+- "UIViewControllerAnimatedTransitioning"
+- "UIViewControllerInteractiveTransitioning"
+depends-member:
+- !private ["s7CVarArgP", "addToNavigationView"]
+- ["s7CVarArgP", "animator"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "interactionController"]
+- ["s7CVarArgP", "isPopping"]
+- ["s7CVarArgP", "navigationController"]
+- ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s7CVarArgP", "navigationControllerSupportedInterfaceOrientations"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addToNavigationView"]
+- ["s28CustomDebugStringConvertibleP", "animator"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "interactionController"]
+- ["s28CustomDebugStringConvertibleP", "isPopping"]
+- ["s28CustomDebugStringConvertibleP", "navigationController"]
+- ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s28CustomDebugStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "addToNavigationView"]
+- ["s23CustomStringConvertibleP", "animator"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "interactionController"]
+- ["s23CustomStringConvertibleP", "isPopping"]
+- ["s23CustomStringConvertibleP", "navigationController"]
+- ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s23CustomStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "addToNavigationView"]
+- ["s9EquatableP", "animator"]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "interactionController"]
+- ["s9EquatableP", "isPopping"]
+- ["s9EquatableP", "navigationController"]
+- ["s9EquatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s9EquatableP", "navigationControllerSupportedInterfaceOrientations"]
+- ["s9EquatableP", ""]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "addToNavigationView"]
+- ["s8HashableP", "animator"]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", "interactionController"]
+- ["s8HashableP", "isPopping"]
+- ["s8HashableP", "navigationController"]
+- ["s8HashableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["s8HashableP", "navigationControllerSupportedInterfaceOrientations"]
+- ["s8HashableP", ""]
+- ["So8NSObjectC", "UINavigationController"]
+- ["So8NSObjectC", "UINavigationControllerOperation"]
+- ["So8NSObjectC", "UIPercentDrivenInteractiveTransition"]
+- ["So8NSObjectC", "UIViewController"]
+- ["So8NSObjectC", "UIViewControllerAnimatedTransitioning"]
+- ["So8NSObjectC", "UIViewControllerInteractiveTransitioning"]
+- !private ["So8NSObjectC", "addToNavigationView"]
+- ["So8NSObjectC", "animator"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "interactionController"]
+- ["So8NSObjectC", "isPopping"]
+- ["So8NSObjectC", "navigationController"]
+- ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
+- ["So8NSObjectC", ""]
+- !private ["So16NSObjectProtocolP", "addToNavigationView"]
+- ["So16NSObjectProtocolP", "animator"]
+- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "interactionController"]
+- ["So16NSObjectProtocolP", "isPopping"]
+- ["So16NSObjectProtocolP", "navigationController"]
+- ["So16NSObjectProtocolP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So16NSObjectProtocolP", "navigationControllerSupportedInterfaceOrientations"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["7NavTest20NavigationAnimatableP", "addToNavigationView"]
+- ["7NavTest20NavigationAnimatableP", "animator"]
+- ["7NavTest20NavigationAnimatableP", "interactionController"]
+- ["7NavTest20NavigationAnimatableP", "isPopping"]
+- ["7NavTest20NavigationAnimatableP", "navigationController"]
+- ["7NavTest20NavigationAnimatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["7NavTest20NavigationAnimatableP", "navigationControllerSupportedInterfaceOrientations"]
+- ["7NavTest20NavigationAnimatableP", ""]
+- ["7NavTest23NavigationStackAnimatorC", "UINavigationController"]
+- ["7NavTest23NavigationStackAnimatorC", "UINavigationControllerOperation"]
+- ["7NavTest23NavigationStackAnimatorC", "UIPercentDrivenInteractiveTransition"]
+- ["7NavTest23NavigationStackAnimatorC", "UIViewController"]
+- ["7NavTest23NavigationStackAnimatorC", "UIViewControllerAnimatedTransitioning"]
+- ["7NavTest23NavigationStackAnimatorC", "UIViewControllerInteractiveTransitioning"]
+- !private ["7NavTest23NavigationStackAnimatorC", "addToNavigationView"]
+- ["7NavTest23NavigationStackAnimatorC", "animator"]
+- ["7NavTest23NavigationStackAnimatorC", "deinit"]
+- ["7NavTest23NavigationStackAnimatorC", "init"]
+- ["7NavTest23NavigationStackAnimatorC", "interactionController"]
+- ["7NavTest23NavigationStackAnimatorC", "isPopping"]
+- ["7NavTest23NavigationStackAnimatorC", "navigationController"]
+- ["7NavTest23NavigationStackAnimatorC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["7NavTest23NavigationStackAnimatorC", "navigationControllerSupportedInterfaceOrientations"]
+- !private ["s12StaticStringV", "init"]
+- !private ["So30UINavigationControllerDelegateP", "addToNavigationView"]
+- ["So30UINavigationControllerDelegateP", "animator"]
+- ["So30UINavigationControllerDelegateP", "interactionController"]
+- ["So30UINavigationControllerDelegateP", "isPopping"]
+- ["So30UINavigationControllerDelegateP", "navigationController"]
+- ["So30UINavigationControllerDelegateP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["So30UINavigationControllerDelegateP", "navigationControllerSupportedInterfaceOrientations"]
+- ["So30UINavigationControllerDelegateP", ""]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addToNavigationView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "animator"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "interactionController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "isPopping"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerSupportedInterfaceOrientations"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "7NavTest20NavigationAnimatableP"
+- "7NavTest23NavigationStackAnimatorC"
+- !private "s12StaticStringV"
+- "So30UINavigationControllerDelegateP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "da93e63e107cc03d89751224c262b874"
